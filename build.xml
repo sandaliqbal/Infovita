@@ -1,0 +1,100 @@
+<project name="Zywee" default="dist" basedir=".">
+	<description>
+    simple example build file
+  </description>
+	<!-- set global properties for this build -->
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="dist" location="dist"/>
+	<property name="bin" location="bin"/>
+	<property name="result" location="result"/>
+	<path id="classpathdef">
+		<fileset dir="${bin}" includes="*.jar" />
+	</path>
+
+	<path id="testpath">
+		<fileset dir="${dist}" />
+		<pathelement location="${build}"/>
+	</path>
+
+	<target name="print-directory">
+		<echo>current directory: ${basedir}</echo>
+	</target>
+
+	<taskdef resource="testngtasks" classpath="bin/testng-6.9.4.jar"/>
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp/>
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}"/>
+	</target>
+
+	<target name="compile" depends="init" description="compile the source">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${build}" classpathref="classpathdef"/>
+	</target>
+
+	<target name="dist" depends="compile" description="generate the distribution">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}/lib"/>
+
+		<!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/lib/ZyweeTest.jar" basedir="${build}"/>
+	</target>
+
+	<target name="runTests" depends="dist">
+
+		<!-- Create the result directory -->
+		<mkdir dir="${result}"/>
+		<junit printsummary="yes" haltonfailure="yes">
+			<classpath refid="classpathdef" />
+			<classpath refid="testpath" />
+
+			<test name="com.zywee.test.TestBuzzHomePage"
+	             haltonfailure="no" outfile="result" todir="${result}">
+
+				<formatter type="plain"/>
+				<formatter type="xml"/>
+
+			</test>
+
+		</junit>
+	</target>
+
+	<target name="testng" depends="dist">
+		<!-- Assume test.path contains the project library dependencies -->
+		<testng haltOnFailure="false" failureProperty="tests.failed">
+			<!-- Extra project classpath, which is not included in above "test.path" -->
+			<!-- Tell Ant where is the project and test classes -->
+			<classpath refid="classpathdef" />
+			<classpath refid="testpath" />
+			<jvmarg value="-Dtestclass=com.zywee.test.TestZyweeHomePage" />
+			<!-- Tell Ant what test classes need to run -->
+			<classfileset dir="${build}" />
+		</testng>
+		<delete dir="${basedir}/test-output-rerun"/>
+		<antcall target="ReRunFailedTests"></antcall>
+	</target>
+
+	<target name="ReRunFailedTests" if="tests.failed">
+		<echo>ReRunning failed tests...</echo>
+		<!-- Assume test.path contains the project library dependencies -->
+		<testng outputDir="${basedir}/test-output-rerun" failureProperty="rerun.failed" haltOnFailure="false">
+			<classpath location="${build}" />
+			<classpath refid="classpathdef" />
+			<classpath refid="testpath" />
+			<xmlfileset dir="${basedir}/test-output" includes="testng-failed.xml" />
+		</testng>
+		<fail if="rerun.failed" message="Tests Failed"/>
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+		<delete dir="${result}"/>
+		<delete dir="test-output"/>
+		<delete dir="test-output-rerun"/>
+	</target>
+</project>
