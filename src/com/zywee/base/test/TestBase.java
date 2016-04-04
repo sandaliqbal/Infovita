@@ -15,13 +15,10 @@ import java.util.concurrent.TimeUnit;
 import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.Assert;
-import com.thoughtworks.selenium.webdriven.commands.GetText;
 import com.zywee.tools.WaitTool;
 
 
@@ -151,6 +148,9 @@ public class TestBase {
 		} else if(propertyMap.get("platform").equals("linux")) {
 			File file = new File("phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
-		}
+		} else if(propertyMap.get("platform").equals("linux_32")) {
+			File file = new File("phantomjs-2.1.1-linux-i686/bin/phantomjs");
+			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
+		}		
 	}
 }
