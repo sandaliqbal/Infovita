@@ -1,6 +1,7 @@
 package com.zywee.base.test;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,6 +18,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.Assert;
 import com.thoughtworks.selenium.webdriven.commands.GetText;
 import com.zywee.tools.WaitTool;
@@ -64,6 +67,7 @@ public class TestBase {
 			// get the property value and print it out
 			propertyMap.put("baseUrl", prop.getProperty("baseUrl"));
 			propertyMap.put("browser", prop.getProperty("browser"));
+			propertyMap.put("platform", prop.getProperty("platform"));
 			System.out.println(prop.getProperty("baseUrl"));
 			System.out.println(prop.getProperty("browser"));
 			
@@ -71,6 +75,9 @@ public class TestBase {
 				final FirefoxProfile profile = new FirefoxProfile();
 				JavaScriptError.addExtension(profile);
 				driver = new FirefoxDriver(profile);
+			} else {
+				setPhantomJsBinaryPath(); 
+				driver = new PhantomJSDriver();
 			}
 			//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
@@ -136,4 +143,14 @@ public class TestBase {
         }
 
     }
+	
+	private void setPhantomJsBinaryPath() {
+		if(propertyMap.get("platform").equals("mac")) {
+			File file = new File("phantomjs-2.1.1-macosx/bin/phantomjs");
+			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
+		} else if(propertyMap.get("platform").equals("linux")) {
+			File file = new File("phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
+		}
+	}
 }
