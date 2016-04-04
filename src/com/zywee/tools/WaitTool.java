@@ -127,7 +127,6 @@ public class WaitTool {
 			  
 			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds); 
 			wait.until((new ExpectedCondition<Boolean>() {
-	            @Override
 	            public Boolean apply(WebDriver driverObject) {
 	                return areElementsPresent(driverObject, by);
 	            }
@@ -167,7 +166,6 @@ public class WaitTool {
 		        new WebDriverWait(driver, timeOutInSeconds) {
 		        }.until(new ExpectedCondition<Boolean>() {
 
-		            @Override
 		            public Boolean apply(WebDriver driverObject) {
 		                driverObject.navigate().refresh(); //refresh the page ****************
 		                return isElementPresentAndDisplay(driverObject, by);
@@ -191,7 +189,6 @@ public class WaitTool {
 			new WebDriverWait(driver, timeOutInSeconds) {
 			}.until(new ExpectedCondition<Boolean>() {
 
-				@Override
 				public Boolean apply(WebDriver driverObject) {
 
 					return isElementPresentAndDisplay(driverObject, by);
@@ -225,7 +222,6 @@ public class WaitTool {
 	        new WebDriverWait(driver, timeOutInSeconds) {
 	        }.until(new ExpectedCondition<Boolean>() {
 	
-	            @Override
 	            public Boolean apply(WebDriver driverObject) {
 	            	return isTextPresent(driverObject, by, text); //is the Text in the DOM
 	            }
@@ -260,7 +256,6 @@ public class WaitTool {
 	        new WebDriverWait(driver, timeOutInSeconds) {
 	        }.until(new ExpectedCondition<Boolean>() {
 	
-	            @Override
 	            public Boolean apply(WebDriver driverObject) {
 	            	return (Boolean) ((JavascriptExecutor) driverObject).executeScript(javaScript);
 	            }
@@ -289,7 +284,6 @@ public class WaitTool {
 	        new WebDriverWait(driver, timeOutInSeconds) {
 	        }.until(new ExpectedCondition<Boolean>() {
 	
-	            @Override
 	            public Boolean apply(WebDriver driverObject) {
 	            	return (Boolean) ((JavascriptExecutor) driverObject).executeScript("return jQuery.active == 0");
 	            }

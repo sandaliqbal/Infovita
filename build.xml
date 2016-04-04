@@ -7,9 +7,10 @@
 	<property name="build" location="build"/>
 	<property name="dist" location="dist"/>
 	<property name="bin" location="bin"/>
+	<property name="lib" location="lib"/>
 	<property name="result" location="result"/>
 	<path id="classpathdef">
-		<fileset dir="${bin}" includes="*.jar" />
+		<fileset dir="${lib}" includes="*.jar" />
 	</path>
 
 	<path id="testpath">
@@ -21,7 +22,7 @@
 		<echo>current directory: ${basedir}</echo>
 	</target>
 
-	<taskdef resource="testngtasks" classpath="bin/testng-6.9.4.jar"/>
+	<taskdef resource="testngtasks" classpath="lib/testng-6.9.4.jar"/>
 
 	<target name="init">
 		<!-- Create the time stamp -->
@@ -43,7 +44,7 @@
 		<jar jarfile="${dist}/lib/ZyweeTest.jar" basedir="${build}"/>
 	</target>
 
-	<target name="runTests" depends="dist">
+	<target name="runJunit" depends="dist">
 
 		<!-- Create the result directory -->
 		<mkdir dir="${result}"/>
@@ -62,7 +63,7 @@
 		</junit>
 	</target>
 
-	<target name="testng" depends="dist">
+	<target name="runTestng" depends="dist">
 		<!-- Assume test.path contains the project library dependencies -->
 		<testng haltOnFailure="false" failureProperty="tests.failed">
 			<!-- Extra project classpath, which is not included in above "test.path" -->
@@ -73,8 +74,11 @@
 			<!-- Tell Ant what test classes need to run -->
 			<classfileset dir="${build}" />
 		</testng>
+		<fail if="tests.failed" message="Tests Failed"/>
+		<!--
 		<delete dir="${basedir}/test-output-rerun"/>
 		<antcall target="ReRunFailedTests"></antcall>
+		-->
 	</target>
 
 	<target name="ReRunFailedTests" if="tests.failed">
