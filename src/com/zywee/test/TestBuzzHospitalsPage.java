@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import com.zywee.base.test.TestBase;
 import com.zywee.pages.AppointmentPage;
-import com.zywee.pages.HospitalListView;
+import com.zywee.pages.ListViewPage;
 import com.zywee.pages.HospitalsDetailPage;
 import com.zywee.pages.HospitalsPage;
 import com.zywee.pages.LeftNavPage;
@@ -116,7 +116,7 @@ public class TestBuzzHospitalsPage extends TestBase {
 	public void testAppointmentPage() {
 		hospitals.open();
 		WaitTool.waitForPageLoad(driver);
-		HospitalListView listView = new HospitalListView(driver);
+		ListViewPage listView = new ListViewPage(driver);
 		AppointmentPage apptPage = listView.bookAppointment(0);
 		apptPage.validatePage();
 	}

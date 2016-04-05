@@ -23,6 +23,8 @@ public class ZyweeHomePage extends PageBase{
 	private final static By searchSpeciality = By.cssSelector("#hospital_cat_id");
 	private final static By searchHospital = By.cssSelector("#hosp_name");
 	private final static By searchButton = By.cssSelector("#search_query");
+	private final static By searchButtonDiag = By.cssSelector("#search_query_diag"); //#search_query_pack
+	private final static By searchButtonClinic = By.cssSelector("#search_query_clinic");
 	
 	private final static By headerLogo =By.cssSelector("#header > div:nth-child(3) > div > div.col-sm-4 > img");
 	private final static By helpline = By.cssSelector("#header > div.container-fluid.top-bar > div > span > span.text1.top_text_margin");
@@ -186,16 +188,32 @@ public class ZyweeHomePage extends PageBase{
 	    driver.findElement(searchLocation).sendKeys("Bellandur");
 	    driver.findElement(searchSpeciality).click();
 	    driver.findElement(searchSpeciality).sendKeys("Eye Hospitals");
-	    HospitalsPage hospPage = clickSearchHospitals();
+	    ListViewPage hospPage = clickSearchHospitals();
 	    hospPage.validatePage();
 	}
 	
-	public HospitalsPage clickSearchHospitals() {
+	public ListViewPage clickSearchHospitals() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
         dropdown.selectByVisibleText("Search Hospitals");
 	    driver.findElement(searchButton).click();
         WaitTool.waitForPageLoad(driver);
-        return new HospitalsPage(driver);
+        return new ListViewHospitals(driver);
+	}
+	
+	public ListViewPage clickSearchDiagnostics() {
+	    Select dropdown = new Select(driver.findElement(searchDropdown));
+        dropdown.selectByVisibleText("Search Diagnostics");
+	    driver.findElement(searchButtonDiag).click();
+        WaitTool.waitForPageLoad(driver);
+        return new ListViewDiagnostics(driver);
+	}
+	
+	public ListViewPage clickSearchClinics() {
+	    Select dropdown = new Select(driver.findElement(searchDropdown));
+        dropdown.selectByVisibleText("Search Clinics");
+	    driver.findElement(searchButtonClinic).click();
+        WaitTool.waitForPageLoad(driver);
+        return new ListViewClinics(driver);
 	}
 	
 	public void verifyPageLinks() {

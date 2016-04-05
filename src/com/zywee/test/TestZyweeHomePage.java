@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.zywee.base.test.TestBase;
+import com.zywee.pages.ListViewPage;
 import com.zywee.pages.ZyweeHomePage;
 import com.zywee.pages.HospitalsPage;
 
@@ -42,8 +43,26 @@ public class TestZyweeHomePage extends TestBase {
 	public void testSearchHospitals(){
 		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
-		HospitalsPage hospitals = zyweeHome.clickSearchHospitals();
+		ListViewPage hospitals = zyweeHome.clickSearchHospitals();
 		hospitals.validatePage();
 		hospitals.doErrorValidation();
+	}
+	
+	@Test
+	public void testSearchDiagnostics(){
+		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
+		zyweeHome.open();
+		ListViewPage diagnostics = zyweeHome.clickSearchDiagnostics();
+		diagnostics.validatePage();
+		diagnostics.doErrorValidation();
+	}
+	
+	@Test
+	public void testSearchClinics(){
+		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
+		zyweeHome.open();
+		ListViewPage clinics = zyweeHome.clickSearchClinics();
+		clinics.validatePage();
+		clinics.doErrorValidation();
 	}
 }

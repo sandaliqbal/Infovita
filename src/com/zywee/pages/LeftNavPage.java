@@ -279,17 +279,17 @@ public class LeftNavPage extends PageBase {
 	}
 	
 	private static void validateResult(String category) {
-		List<HospitalListView> hospitals = HospitalListView.getHospitalList();
+		List<ListViewPage> hospitals = null;// ListViewPage.getHospitalList();
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
-		for (HospitalListView hosp:hospitals) {
+		for (ListViewPage hosp:hospitals) {
 			Assert.assertTrue("Correct category not found",getText(hosp.category).contains(category));
 		}
 	}
 	
 	private static void validateFacilityResult(int faccilityId,String facilityTitle) {
-		List<HospitalListView> hospitals = HospitalListView.getHospitalList();
+		List<ListViewPage> hospitals = null;// ListViewPage.getHospitalList();
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
-		for (HospitalListView hosp:hospitals) {
+		for (ListViewPage hosp:hospitals) {
 			String locator = hosp.facilityAmbulance.replace("child(1)", String.format("child(%d)",faccilityId));
 			WebElement element = driver.findElement(By.cssSelector(locator));
 			WebElement parent = element.findElement(By.xpath("..")); 
@@ -300,13 +300,13 @@ public class LeftNavPage extends PageBase {
 	}
 	
 	private static void validateCostCatResult(String costCategory) {
-		List<HospitalListView> hospitals = HospitalListView.getHospitalList();
+		List<ListViewPage> hospitals = null;// ListViewPage.getHospitalList();
 		String range = costCategory.replaceAll("Rs", "");
 		int index = range.indexOf('-');
 		int min = Integer.parseInt(range.substring(0, index).trim());
 		int max = Integer.parseInt(range.substring(index+1, range.length()).trim());
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
-		for (HospitalListView hosp:hospitals) {
+		for (ListViewPage hosp:hospitals) {
 			String consultFee = getText(hosp.consultFee);
 			Assert.assertNotNull("Consult fee not found",consultFee);
 			int fee = Integer.parseInt(consultFee.replaceAll("\\D+",""));
@@ -315,9 +315,9 @@ public class LeftNavPage extends PageBase {
 	}
 	
 	private static void validateResult(List<String> category) {
-		List<HospitalListView> hospitals = HospitalListView.getHospitalList();
+		List<ListViewPage> hospitals = null;//ListViewPage.getHospitalList();
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
-		for (HospitalListView hosp:hospitals) {
+		for (ListViewPage hosp:hospitals) {
 			Assert.assertTrue("Correct category not found",category.contains(getText(hosp.category)));
 		}
 	}

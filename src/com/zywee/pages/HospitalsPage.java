@@ -33,7 +33,7 @@ public class HospitalsPage extends PageBase {
 		ZyweeHomePage.validateHeader();
 		//LeftNavPage.validateLeftNav();
 		ZyweeHomePage.validateFooter();
-		HospitalListView listView = new HospitalListView(driver);
+		ListViewPage listView = new ListViewHospitals(driver);
 		listView.validateAll();
 	}
 	
@@ -47,7 +47,7 @@ public class HospitalsPage extends PageBase {
 	}
 	
 	public void sortOnNameDesc() {
-		selectDropdown("Z - A");
+		selectDropdown("Sort By Order");
 	}
 	
 	public void sortOnRating() {
@@ -55,7 +55,7 @@ public class HospitalsPage extends PageBase {
 	}
 	
 	public HospitalsDetailPage gotoDetailPage() {
-		HospitalListView listView = new HospitalListView(driver);
+		ListViewPage listView = new ListViewPage(driver);
 		return listView.gotoDetailPage();
 	}
 		
@@ -63,7 +63,7 @@ public class HospitalsPage extends PageBase {
 		Select dropdown = new Select(driver.findElement(sortDropdown));
 		dropdown.selectByVisibleText(visibleText);
 		WaitTool.waitForJQueryProcessing(driver, 30);
-		HospitalListView listView = new HospitalListView(driver);
+		ListViewPage listView = new ListViewPage(driver);
 		softAssert.assertNotNull(listView, "No result found");
 		softAssert.assertNotEquals(listView.getHospitalList().size(),0,"No hospitals found");
 	}
