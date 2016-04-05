@@ -18,8 +18,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import com.zywee.tools.WaitTool;
+
 
 
 
@@ -73,8 +76,10 @@ public class TestBase {
 				JavaScriptError.addExtension(profile);
 				driver = new FirefoxDriver(profile);
 			} else {
-				setPhantomJsBinaryPath(); 
-				driver = new PhantomJSDriver();
+				DesiredCapabilities caps = new DesiredCapabilities();
+                caps.setJavascriptEnabled(true);  
+				setPhantomJsBinaryPath(caps);
+				driver = new PhantomJSDriver(caps);
 			}
 			//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
@@ -141,16 +146,18 @@ public class TestBase {
 
     }
 	
-	private void setPhantomJsBinaryPath() {
+	private void setPhantomJsBinaryPath(DesiredCapabilities caps) {
+		File file = new File("phantomjs/mac/bin/phantomjs");
 		if(propertyMap.get("platform").equals("mac")) {
-			File file = new File("phantomjs-2.1.1-macosx/bin/phantomjs");
+			file = new File("phantomjs/mac/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
 		} else if(propertyMap.get("platform").equals("linux")) {
-			File file = new File("phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+			file = new File("phantomjs/linux64/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
 		} else if(propertyMap.get("platform").equals("linux_32")) {
-			File file = new File("phantomjs-2.1.1-linux-i686/bin/phantomjs");
+			file = new File("phantomjs/linux32/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
 		}		
+		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, file.getAbsolutePath());
 	}
 }
