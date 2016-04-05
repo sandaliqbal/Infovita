@@ -151,7 +151,7 @@ public class TestBase {
 		if(propertyMap.get("platform").equals("mac")) {
 			file = new File("phantomjs/mac/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
-		} else if(propertyMap.get("platform").equals("linux")) {
+		} else if(propertyMap.get("platform").equals("linux_64")) {
 			file = new File("phantomjs/linux64/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
 		} else if(propertyMap.get("platform").equals("linux_32")) {
