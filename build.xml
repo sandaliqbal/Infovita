@@ -65,7 +65,8 @@
 
 	<target name="runTestng" depends="dist">
 		<!-- Assume test.path contains the project library dependencies -->
-		<testng haltOnFailure="false" failureProperty="tests.failed">
+		<testng haltOnFailure="false" failureProperty="tests.failed" 
+			listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
 			<!-- Extra project classpath, which is not included in above "test.path" -->
 			<!-- Tell Ant where is the project and test classes -->
 			<classpath refid="classpathdef" />
