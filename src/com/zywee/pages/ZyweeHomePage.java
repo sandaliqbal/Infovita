@@ -316,7 +316,7 @@ public class ZyweeHomePage extends PageBase{
 		List<WebElement> selectList = dropdown.getOptions();
 		List<String> options = new ArrayList<String>();
 		for(WebElement element:selectList) {
-			options.add(element.getText());
+			options.add(element.getText().trim());
 		}
 		softAssert.assertEquals(options.size(),6,"There should be 6 options in the dropdown");
 		softAssert.assertTrue(options.contains("Search Hospitals"), "Search Hospitals option not found");
