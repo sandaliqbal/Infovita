@@ -6,9 +6,9 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import com.zywee.base.test.TestBase;
 import com.zywee.pages.AppointmentPage;
+import com.zywee.pages.ListViewHospitals;
 import com.zywee.pages.ListViewPage;
 import com.zywee.pages.HospitalsDetailPage;
-import com.zywee.pages.HospitalsPage;
 import com.zywee.pages.LeftNavPage;
 import com.zywee.tools.WaitTool;
 
@@ -16,13 +16,13 @@ import com.zywee.tools.WaitTool;
 public class TestBuzzHospitalsPage extends TestBase {
 
 	private static WebDriver driver;
-	private static HospitalsPage hospitals;
+	private static ListViewHospitals hospitals;
 
 	@Before
 	public void setUp() throws Exception {
 		init();
 		driver = super.driver;
-		hospitals = new HospitalsPage(driver);
+		hospitals = new ListViewHospitals(driver);
 	}
 
 	@After

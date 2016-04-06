@@ -4,12 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import com.zywee.base.test.TestBase;
 import com.zywee.pages.ListViewPage;
 import com.zywee.pages.ZyweeHomePage;
-import com.zywee.pages.HospitalsPage;
-
-
 
 
 public class TestZyweeHomePage extends TestBase {
@@ -64,5 +62,35 @@ public class TestZyweeHomePage extends TestBase {
 		ListViewPage clinics = zyweeHome.clickSearchClinics();
 		clinics.validatePage();
 		clinics.doErrorValidation();
+	}
+	
+	@Test
+	public void testSearchPackages(){
+		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
+		zyweeHome.open();
+		ListViewPage packages = zyweeHome.clickSearchPackages();
+		packages.validatePage();
+		packages.validateAll();
+		packages.doErrorValidation();
+	}
+	
+	@Test
+	public void testSearchDoctors(){
+		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
+		zyweeHome.open();
+		ListViewPage doctors = zyweeHome.clickSearchDoctors();
+		doctors.validatePage();
+		doctors.validateAll();
+		doctors.doErrorValidation();
+	}
+	
+	@Test
+	public void testSearchTests(){
+		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
+		zyweeHome.open();
+		ListViewPage tests = zyweeHome.clickSearchTests();
+		tests.validatePage();
+		tests.validateAll();
+		tests.doErrorValidation();
 	}
 }

@@ -8,21 +8,21 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import com.zywee.base.test.TestBase;
 import com.zywee.pages.HospitalsDetailPage;
-import com.zywee.pages.HospitalsPage;
+import com.zywee.pages.ListViewHospitals;
 import com.zywee.tools.WaitTool;
 
 
 public class TestHospitalDetailPage extends TestBase {
 
     private static WebDriver driver;
-    private static HospitalsPage hospitals;
+    private static ListViewHospitals hospitals;
     private static HospitalsDetailPage hospitalDetail;
 
     @Before
     public void setUp() throws Exception {
         init();
         driver = super.driver;
-        hospitals = new HospitalsPage(driver);
+        hospitals = new ListViewHospitals(driver);
         hospitals.open();
         WaitTool.waitForPageLoad(driver);
         hospitalDetail = hospitals.gotoDetailPage();

@@ -222,6 +222,12 @@ public class PageBase {
             Assert.fail("The following asserts failed: " + errors);
         }
     }
+	
+	public  static void addAssertionError(String msg) {
+        if(assertionErrors.indexOf(msg) == -1) {
+        	assertionErrors.append(msg);
+        }
+    }
 }
 /**
  * Further reading: 

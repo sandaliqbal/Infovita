@@ -15,9 +15,9 @@ import com.zywee.tools.WaitTool;
 
 public class ListViewPage extends PageBase {
 	
-	protected static final By breadCrumb = By.cssSelector("#content > div.row.grey > div > ul > li:nth-child(2)");
-	protected static final By resultTitle = By.cssSelector("#content > div.container-fluid.Ab > div > div.col-sm-3.no_of_hosp");
-	protected static final By sortDropdown = By.cssSelector("#content > div.container-fluid.Ab > div > div.col-sm-9 > select");
+	protected By breadCrumb = By.cssSelector("#content > div.row.grey > div > ul > li:nth-child(2)");
+	protected By resultTitle = By.cssSelector("#content > div.container-fluid.Ab > div > div.col-sm-3.no_of_hosp");
+	protected By sortDropdown = By.cssSelector("#content > div.container-fluid.Ab > div > div.col-sm-9 > select");
 	
 	protected String items = "#content > div.container-fluid.HOSPITAL > div > " +
 			"div.col-xs-9.right-box > div.render > div";
@@ -61,9 +61,9 @@ public class ListViewPage extends PageBase {
 		super(driver);
 	}
 	
-	public ListViewPage(WebDriver driver,int itemNum) {
+	public ListViewPage(WebDriver driver,int resultNum) {
 		this(driver);
-		setithItem(itemNum);
+		setithItem(resultNum);
 	}
 	
 	public void validateListView() {
@@ -84,35 +84,13 @@ public class ListViewPage extends PageBase {
 		try {
             softAssert.assertAll();
         } catch(AssertionError er) {
-            assertionErrors.append(er.getMessage());
+        	addAssertionError(er.getMessage());
         }
 		validatePageHeaders();		
         //doErrorValidation();
 		ZyweeHomePage.validateHeader();
 		//LeftNavPage.validateLeftNav();
 		ZyweeHomePage.validateFooter();
-	    softAssert.assertTrue(isElementPresent(hospImage),"Hospital Image not found");
-		softAssert.assertTrue(isElementPresent(hospName),"Hospital Name not found");
-		String hospname = null;
-		try {
-			hospname = getText(hospName);
-		} catch (Exception ex) {
-			assertionErrors.append(ex.getMessage());
-		}
-		softAssert.assertTrue(isElementPresent(category),"Hospital category not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(location),"Hospital location not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(rating),"Hospital rating not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(consultFee),"Consultation fee not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(wardCharge),"Ward charge not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(contact),"Contact number not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(facility),"Facilities not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(viewMoreInfo),"View More Info link not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(bookNowButton),"Book Appointment button not found for " + hospname);
-		try {
-		    softAssert.assertAll();
-		} catch(AssertionError er) {
-		    assertionErrors.append(er.getMessage());
-		}
 		/*
 		ListViewPage listView = new ListViewHospitals(driver);
 		listView.validateAll();
@@ -123,12 +101,22 @@ public class ListViewPage extends PageBase {
 	protected void validatePageHeaders() {
 		softAssert.assertTrue(getText(resultTitle).trim().contains("Hospitals"),"Title does not contain Hospitals");
 		softAssert.assertTrue(getText(breadCrumb).trim().endsWith("Hospitals"),"Bread crumb does not end with Hospitals");
+		try {
+		    softAssert.assertAll();
+		} catch(AssertionError er) {
+			addAssertionError(er.getMessage());
+		}
 	}
 	
 	public void validateFacilities() {
 		softAssert.assertFalse(facilityMap.isEmpty(),"No facilities found");
 		for(Map.Entry<String, String> entry:facilityMap.entrySet()) {
 			softAssert.assertTrue(isElementPresent(entry.getValue()));
+		}
+		try {
+		    softAssert.assertAll();
+		} catch(AssertionError er) {
+			addAssertionError(er.getMessage());
 		}
 	}
 	
@@ -137,7 +125,7 @@ public class ListViewPage extends PageBase {
 		return new HospitalsDetailPage(driver);
 	}
 	
-	public List<ListViewPage> getHospitalList() {
+	public List<ListViewPage> getResultList() {
 		List<ListViewPage> listViewHospitals = new ArrayList();
 		numItems = driver.findElements(By.cssSelector(items)).size();
 		for(int i=2;i<=numItems-2;i++) {
@@ -148,15 +136,14 @@ public class ListViewPage extends PageBase {
 	}
 	
 	public void validateAll() {
-	    List<ListViewPage> listViewHospitals = getHospitalList();
-	    for(ListViewPage eachHospital: listViewHospitals) {
+	    List<ListViewPage> resultList = getResultList();
+	    for(ListViewPage eachHospital: resultList) {
 	        eachHospital.validatePage();
 	    }
-	    //doErrorValidation();
 	}
 	
 	public AppointmentPage bookAppointment(int id) {
-		List<ListViewPage> listViewHospitals = getHospitalList();
+		List<ListViewPage> listViewHospitals = getResultList();
 		driver.findElement(By.cssSelector(listViewHospitals.get(id).bookNowButton)).click();
 		windowFocus();
 		WaitTool.waitForPageLoad(driver);
@@ -185,7 +172,12 @@ public class ListViewPage extends PageBase {
 		WaitTool.waitForJQueryProcessing(driver, 30);
 		ListViewPage listView = new ListViewPage(driver);
 		softAssert.assertNotNull(listView, "No result found");
-		softAssert.assertNotEquals(listView.getHospitalList().size(),0,"No hospitals found");
+		softAssert.assertNotEquals(listView.getResultList().size(),0,"No hospitals found");
+		try {
+		    softAssert.assertAll();
+		} catch(AssertionError er) {
+			addAssertionError(er.getMessage());
+		}
 	}
 	
 	protected void setithItem(int i) {
