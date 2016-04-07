@@ -1,4 +1,4 @@
-package com.zywee.pages;
+package com.zywee.base.page;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,7 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import com.zywee.base.page.PageBase;
+import com.zywee.pages.AppointmentPage;
+import com.zywee.pages.HospitalsDetailPage;
+import com.zywee.pages.ZyweeHomePage;
 import com.zywee.tools.WaitTool;
 
 

@@ -6,6 +6,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+import com.zywee.leftnav.LeftNavPage;
+
 public class ListViewClinics extends ListViewPage {
 
 	public ListViewClinics(WebDriver driver) {
@@ -58,6 +61,13 @@ public class ListViewClinics extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
+		/*DiagnosticFacilityPage sp = new DiagnosticFacilityPage(driver);
+		sp.getCheckboxes();
+		sp.selectCheckboxes("Hearing Aid Servicing");*/
+		
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		leftNav = leftNav.getClinicLeftNav();
+		leftNav.selectFacility("Hearing Aid Servicing");
 	}
 	
 	@Override

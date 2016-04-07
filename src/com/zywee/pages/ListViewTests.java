@@ -6,6 +6,8 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+
 public class ListViewTests extends ListViewPage {
 
 	public ListViewTests(WebDriver driver) {

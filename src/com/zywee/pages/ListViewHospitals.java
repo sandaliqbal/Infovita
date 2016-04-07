@@ -2,6 +2,10 @@ package com.zywee.pages;
 
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+import com.zywee.base.page.SpecialityBase;
+import com.zywee.leftnav.LeftNavPage;
+
 public class ListViewHospitals extends ListViewPage {
 
 	public ListViewHospitals(WebDriver driver) {
@@ -49,5 +53,11 @@ public class ListViewHospitals extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
+		/*FacilityPage sp = new FacilityPage(driver);
+		sp.getCheckboxes();
+		sp.selectCheckboxes("MRI");*/
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		leftNav = leftNav.getHospitalLeftNav();
+		leftNav.selectSpeciality("Super Speciality");
 	}
 }

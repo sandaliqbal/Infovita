@@ -1,12 +1,13 @@
-package com.zywee.pages;
+package com.zywee.leftnav;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import com.zywee.base.page.ListViewPage;
 import com.zywee.base.page.PageBase;
 import com.zywee.tools.WaitTool;
 
@@ -43,6 +44,15 @@ public class LeftNavPage extends PageBase {
 			"span:nth-child(2)";
 	private static final String specialityCheckbox = specialityBlock + "div.content-module-main.cf > label";
 	
+	private WebElement hideButton = driver.findElement(By.cssSelector("#desktop_filter"));
+	private CenterTypePage centerType;// = new CenterTypePage(driver);
+	private ClinicChargePage clinicCharge;// = new ClinicChargePage(driver);
+	private DiagnosticChargePage diagCharge;// = new DiagnosticChargePage(driver);
+	private HospitalChargePage hospCharge;
+	private PackageChargePage packCharge;// = new PackageChargePage(driver);
+	private FacilityPage facilityPage;
+	private SpecialityPage specialityPage;
+	
 	public LeftNavPage(WebDriver driver) {
 		super(driver);
 	}
@@ -52,6 +62,58 @@ public class LeftNavPage extends PageBase {
 		validateCostCategory();
 		validateFacility();
 		validateSpeciality();
+	}
+	
+	public LeftNavPage getHospitalLeftNav() {
+		specialityPage = new SpecialityPage(driver);
+		hospCharge = new HospitalChargePage(driver);
+		facilityPage = new FacilityPage(driver);
+		return this;
+	}
+	
+	public LeftNavPage getPackageLeftNav() {
+		packCharge = new PackageChargePage(driver);
+		centerType = new CenterTypePage(driver);
+		return this;
+	}
+	
+	public LeftNavPage getDiagnosticLeftNav() {
+		diagCharge = new DiagnosticChargePage(driver);
+		facilityPage = new DiagnosticFacilityPage(driver);
+		return this;
+	}
+	
+	public LeftNavPage getDoctorLeftNav() {
+		packCharge = new PackageChargePage(driver);
+		centerType = new CenterTypePage(driver);
+		packCharge.setChargeHeading("Fee");
+		packCharge.setChargeTypeText("Doctor");
+		//packCharge.validate();
+		return this;
+	}
+	
+	public LeftNavPage getTestLeftNav() {
+		packCharge = new PackageChargePage(driver);
+		packCharge.setChargeTypeText("Test Charges");
+		return this;
+	}
+	
+	public LeftNavPage getClinicLeftNav() {
+		clinicCharge = new ClinicChargePage(driver);
+		facilityPage = new DiagnosticFacilityPage(driver);
+		return this;
+	}
+	
+	public void selectSpeciality(String specialityName) {
+		specialityPage.selectCheckboxes(specialityName);
+	}
+	
+	public void selectCenterType(String centerTypeName) {
+		centerType.selectCheckboxes(centerTypeName);
+	}
+	
+	public void selectFacility(String facilityName) {
+		facilityPage.selectCheckboxes(facilityName);
 	}
 	
 	public static void validateCategory() {
@@ -282,7 +344,7 @@ public class LeftNavPage extends PageBase {
 		List<ListViewPage> hospitals = null;// ListViewPage.getHospitalList();
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
 		for (ListViewPage hosp:hospitals) {
-			Assert.assertTrue("Correct category not found",getText(hosp.category).contains(category));
+			Assert.assertTrue("Correct category not found",getText(hosp.getTitle()/*.category*/).contains(category));
 		}
 	}
 	
@@ -290,7 +352,7 @@ public class LeftNavPage extends PageBase {
 		List<ListViewPage> hospitals = null;// ListViewPage.getHospitalList();
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
 		for (ListViewPage hosp:hospitals) {
-			String locator = hosp.facilityAmbulance.replace("child(1)", String.format("child(%d)",faccilityId));
+			String locator = null;//hosp.facilityAmbulance.replace("child(1)", String.format("child(%d)",faccilityId));
 			WebElement element = driver.findElement(By.cssSelector(locator));
 			WebElement parent = element.findElement(By.xpath("..")); 
 			Assert.assertTrue("Correct facility not found",element.isDisplayed());
@@ -307,7 +369,7 @@ public class LeftNavPage extends PageBase {
 		int max = Integer.parseInt(range.substring(index+1, range.length()).trim());
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
 		for (ListViewPage hosp:hospitals) {
-			String consultFee = getText(hosp.consultFee);
+			String consultFee = getText(hosp.getTitle()/*.consultFee*/);
 			Assert.assertNotNull("Consult fee not found",consultFee);
 			int fee = Integer.parseInt(consultFee.replaceAll("\\D+",""));
 			Assert.assertTrue("consult fee should lie in the range",fee<=max && fee >=min);
@@ -318,7 +380,7 @@ public class LeftNavPage extends PageBase {
 		List<ListViewPage> hospitals = null;//ListViewPage.getHospitalList();
 		Assert.assertNotEquals("No results found",hospitals.size(),0);
 		for (ListViewPage hosp:hospitals) {
-			Assert.assertTrue("Correct category not found",category.contains(getText(hosp.category)));
+			Assert.assertTrue("Correct category not found",category.contains(getText(hosp.getTitle()/*.category*/)));
 		}
 	}
 	

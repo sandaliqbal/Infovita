@@ -6,6 +6,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+import com.zywee.leftnav.LeftNavPage;
+
 public class ListViewDiagnostics extends ListViewPage {
 	
 	public ListViewDiagnostics(WebDriver driver) {
@@ -58,6 +61,14 @@ public class ListViewDiagnostics extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
+		/*
+		DiagnosticFacilityPage sp = new DiagnosticFacilityPage(driver);
+		sp.getCheckboxes();
+		sp.selectCheckboxes("C T Scan");*/
+		
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		leftNav = leftNav.getDiagnosticLeftNav();
+		leftNav.selectFacility("C T Scan");
 	}
 	
 	@Override

@@ -4,12 +4,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+
+import com.zywee.base.page.ListViewPage;
 import com.zywee.base.test.TestBase;
+import com.zywee.leftnav.LeftNavPage;
 import com.zywee.pages.AppointmentPage;
 import com.zywee.pages.ListViewHospitals;
-import com.zywee.pages.ListViewPage;
 import com.zywee.pages.HospitalsDetailPage;
-import com.zywee.pages.LeftNavPage;
 import com.zywee.tools.WaitTool;
 
 

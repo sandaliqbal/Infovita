@@ -5,8 +5,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.zywee.base.page.ListViewPage;
 import com.zywee.base.test.TestBase;
-import com.zywee.pages.ListViewPage;
 import com.zywee.pages.ZyweeHomePage;
 
 

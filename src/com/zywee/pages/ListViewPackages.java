@@ -6,6 +6,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+import com.zywee.leftnav.LeftNavPage;
+
 public class ListViewPackages extends ListViewPage {
 	
 	protected String packName;
@@ -110,6 +113,14 @@ public class ListViewPackages extends ListViewPage {
         } catch(AssertionError er) {
         	addAssertionError(er.getMessage());
         }
+        /*
+        CenterTypePage sp = new CenterTypePage(driver);
+		sp.getCheckboxes();
+		sp.selectCheckboxes("Diagnostics Centres");
+		*/
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		leftNav = leftNav.getPackageLeftNav();
+		leftNav.selectCenterType("Diagnostics Centres");
 	}		
 
 }

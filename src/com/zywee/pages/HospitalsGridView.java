@@ -2,6 +2,8 @@ package com.zywee.pages;
 
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+
 public class HospitalsGridView extends ListViewPage {
 	
 	public HospitalsGridView(WebDriver driver) {

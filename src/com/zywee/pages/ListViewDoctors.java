@@ -6,6 +6,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.zywee.base.page.ListViewPage;
+import com.zywee.leftnav.LeftNavPage;
+
 public class ListViewDoctors extends ListViewPage {
 
 	public ListViewDoctors(WebDriver driver) {
@@ -101,6 +104,14 @@ public class ListViewDoctors extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
+		/*
+		CenterTypePage sp = new CenterTypePage(driver);
+		sp.getCheckboxes();
+		sp.selectCheckboxes("Clinics");*/
+		
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		leftNav = leftNav.getDoctorLeftNav();
+		leftNav.selectCenterType("Clinics");
 	}
 	
 	@Override
