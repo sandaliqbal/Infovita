@@ -8,13 +8,17 @@
 	<property name="dist" location="dist"/>
 	<property name="lib" location="lib"/>
 	<property name="result" location="result"/>
+	<property name="testng.templates" location="testng-templates"/>
+	<property name="tmp.dir" location="tmp"/>
+	<property name="class.names" value="com.zywee.test.TestZyweeHomePage,com.zywee.test.TestHospitalsPage"/>
 	<path id="classpathdef">
 		<fileset dir="${lib}" includes="*.jar" />
+		<pathelement location="bin"/>
 		<pathelement location="${build}"/>
 	</path>
 
 	<target name="print-directory">
-		<echo>current directory: ${basedir}</echo>
+		<echo>current directory: ${tmp.dir}</echo>
 	</target>
 
 	<taskdef resource="testngtasks" classpath="lib/testng-6.9.4.jar"/>
@@ -45,7 +49,7 @@
 		<!-- Create the result directory -->
 		<mkdir dir="${result}"/>
 		<junit printsummary="yes" haltonfailure="yes">
-			<classpath refid="classpathdef" />		
+			<classpath refid="classpathdef" />
 			<test name="com.zywee.test.TestZyweeHomePage"
 	             haltonfailure="no" outfile="result" todir="${result}">
 				<formatter type="plain"/>
@@ -55,16 +59,32 @@
 		</junit>
 	</target>
 
+	<target name="test" depends="dist">
+		<java classname="org.testng.TestNG">
+			<arg line="-testclass ${class.names}" />
+			<classpath refid="classpathdef" />
+		</java>
+	</target>
+
 	<target name="runTestng" depends="dist">
+		<!--
+		<copy todir="${tmp.dir}" file="${testng.templates}/testfn.xml" overwrite="true">
+		      <filterset>
+		         <filter token="CLASS" value="${class.name}"/>
+		      </filterset>
+		</copy>
+		-->
 		<!-- Assume test.path contains the project library dependencies -->
 		<testng haltOnFailure="false" failureProperty="tests.failed" 
 			listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
 			<!-- Extra project classpath, which is not included in above "test.path" -->
 			<!-- Tell Ant where is the project and test classes -->
 			<classpath refid="classpathdef" />
-			<jvmarg value="-Dtestclass=com.zywee.test.TestZyweeHomePage" />
-			<!-- Tell Ant what test classes need to run -->
 			<classfileset dir="${build}" />
+			<!-- Tell Ant what test classes need to run -->
+			<!--
+			<xmlfileset dir="${tmp.dir}" includes="testfn.xml" />
+			-->
 		</testng>
 		<fail if="tests.failed" message="Tests Failed"/>
 		<!--
@@ -89,6 +109,7 @@
 		<delete dir="${build}"/>
 		<delete dir="${dist}"/>
 		<delete dir="${result}"/>
+		<delete dir="${tmp.dir}"/>
 		<delete dir="test-output"/>
 		<delete dir="test-output-rerun"/>
 	</target>

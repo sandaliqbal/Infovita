@@ -117,7 +117,7 @@ public class ListViewDoctors extends ListViewPage {
 	@Override
 	public List<ListViewPage> getResultList() {
 		List<ListViewPage> resultList = new ArrayList();
-		numItems = driver.findElements(By.cssSelector(items)).size();
+		numItems = driver.findElements(items).size();
 		for(int i=1;i<=numItems;i++) {
 			ListViewPage doc = new ListViewDoctors(driver, i);
 			resultList.add(doc);

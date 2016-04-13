@@ -79,7 +79,7 @@ public class ListViewDiagnostics extends ListViewPage {
 	@Override
 	public List<ListViewPage> getResultList() {
 		List<ListViewPage> listViewHospitals = new ArrayList();
-		numItems = driver.findElements(By.cssSelector(items)).size();
+		numItems = driver.findElements(items).size();
 		for(int i=1;i<=numItems;i++) {
 			ListViewPage hosp = new ListViewDiagnostics(driver, i);
 			listViewHospitals.add(hosp);

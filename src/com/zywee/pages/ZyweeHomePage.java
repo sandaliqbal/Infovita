@@ -12,6 +12,8 @@ import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import com.zywee.base.page.ListViewPage;
 import com.zywee.base.page.PageBase;
@@ -118,16 +120,11 @@ public class ZyweeHomePage extends PageBase{
 	}
 	
 	public static void validateHeader() {
-	    softAssert.assertTrue(isElementPresent(headerLogo),"header logo not found");
-	    softAssert.assertTrue(isElementPresent(helpline),"helpline number not found");
-	    softAssert.assertTrue(isElementPresent(emergency),"emergency number not found");
-        softAssert.assertTrue(isElementPresent(cityDropdown),"city dropdown not found");
-        softAssert.assertTrue(isElementPresent(menuButton),"menu button not found");
-        try {
-            softAssert.assertAll();
-        } catch (AssertionError er) {
-        	addAssertionError(er.getMessage());
-        }
+	    Assert.assertTrue(isElementPresent(headerLogo),"header logo not found");
+	    Assert.assertTrue(isElementPresent(helpline),"helpline number not found");
+	    Assert.assertTrue(isElementPresent(emergency),"emergency number not found");
+        Assert.assertTrue(isElementPresent(cityDropdown),"city dropdown not found");
+        Assert.assertTrue(isElementPresent(menuButton),"menu button not found");
         /*
 		for (Map.Entry<String, String> entry : headerLinks.entrySet())
 		{
@@ -137,28 +134,23 @@ public class ZyweeHomePage extends PageBase{
 	}
 	
 	public static void validateFooter() {
-	    softAssert.assertTrue(isElementPresent(aboutUsLink),"About Us link  in footer not found");
-	    softAssert.assertTrue(isElementPresent(fbLink),"Facebook link in footer not found");
-	    softAssert.assertTrue(isElementPresent(twitLink),"Twitter link in footer not found");
-	    softAssert.assertTrue(isElementPresent(googLink),"Google plus link in footer not found");
-	    softAssert.assertTrue(isElementPresent(blogLink),"Blog link in footer not found");
-	    softAssert.assertTrue(isElementPresent(findHospLink),"Find Hospitals link in footer not found");
-	    softAssert.assertTrue(isElementPresent(findDocLink),"Find Doctors link in footer not found");
-	    softAssert.assertTrue(isElementPresent(findClinicLink),"Find Clinics link in footer not found");
-	    softAssert.assertTrue(isElementPresent(findDiagnosticLink),"Find Diagnostic Centers link in footer not found");
-	    softAssert.assertTrue(isElementPresent(findTreatmentLink),"Find Treatment Packages link in footer not found");
-	    softAssert.assertTrue(isElementPresent(findMedTestLink),"Find Medical Tests link in footer not found");
-	    softAssert.assertTrue(isElementPresent(addHospLink),"Add hospital link in footer not found");
-	    softAssert.assertTrue(isElementPresent(advertizeLink),"Advertize link in footer not found");
-	    softAssert.assertTrue(isElementPresent(termsLink),"Terms of Use link in footer not found");
-	    softAssert.assertTrue(isElementPresent(privacyLink),"Privacy link in footer not found");
-	    softAssert.assertTrue(isElementPresent(certLink),"Certificate link in footer not found");
-	    softAssert.assertTrue(isElementPresent(footerTM),"Trademark in footer not found");
-	    try {
-            softAssert.assertAll();
-        } catch (AssertionError er) {
-        	addAssertionError(er.getMessage());
-        }
+	    Assert.assertTrue(isElementPresent(aboutUsLink),"About Us link  in footer not found");
+	    Assert.assertTrue(isElementPresent(fbLink),"Facebook link in footer not found");
+	    Assert.assertTrue(isElementPresent(twitLink),"Twitter link in footer not found");
+	    Assert.assertTrue(isElementPresent(googLink),"Google plus link in footer not found");
+	    Assert.assertTrue(isElementPresent(blogLink),"Blog link in footer not found");
+	    Assert.assertTrue(isElementPresent(findHospLink),"Find Hospitals link in footer not found");
+	    Assert.assertTrue(isElementPresent(findDocLink),"Find Doctors link in footer not found");
+	    Assert.assertTrue(isElementPresent(findClinicLink),"Find Clinics link in footer not found");
+	    Assert.assertTrue(isElementPresent(findDiagnosticLink),"Find Diagnostic Centers link in footer not found");
+	    Assert.assertTrue(isElementPresent(findTreatmentLink),"Find Treatment Packages link in footer not found");
+	    Assert.assertTrue(isElementPresent(findMedTestLink),"Find Medical Tests link in footer not found");
+	    Assert.assertTrue(isElementPresent(addHospLink),"Add hospital link in footer not found");
+	    Assert.assertTrue(isElementPresent(advertizeLink),"Advertize link in footer not found");
+	    Assert.assertTrue(isElementPresent(termsLink),"Terms of Use link in footer not found");
+	    Assert.assertTrue(isElementPresent(privacyLink),"Privacy link in footer not found");
+	    Assert.assertTrue(isElementPresent(certLink),"Certificate link in footer not found");
+	    Assert.assertTrue(isElementPresent(footerTM),"Trademark in footer not found");
 	    /*
 		for (Map.Entry<String, String> entry : footerLinks.entrySet())
 		{

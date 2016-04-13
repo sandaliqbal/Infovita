@@ -1,15 +1,20 @@
 package com.zywee.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.zywee.base.page.ListViewPage;
 import com.zywee.base.page.SpecialityBase;
+import com.zywee.leftnav.FacilityPage;
+import com.zywee.leftnav.HospitalChargePage;
 import com.zywee.leftnav.LeftNavPage;
+import com.zywee.leftnav.SpecialityPage;
 
 public class ListViewHospitals extends ListViewPage {
 
 	public ListViewHospitals(WebDriver driver) {
 		super(driver);
+		URL = URL + "/bangalore/hospitals";
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -59,5 +64,25 @@ public class ListViewHospitals extends ListViewPage {
 		LeftNavPage leftNav = new LeftNavPage(driver);
 		leftNav = leftNav.getHospitalLeftNav();
 		leftNav.selectSpeciality("Super Speciality");
+	}
+	
+	public HospitalsDetailPage clickHospitalName() {
+		driver.findElement(By.cssSelector(hospName)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public HospitalsDetailPage clickViewMoreInfo() {
+		driver.findElement(By.cssSelector(viewMoreInfo)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public AppointmentPage clickBookAppointment() {
+		driver.findElement(By.cssSelector(bookNowButton)).click();
+		return new AppointmentPage(driver);
+	}
+	
+	public LeftNavPage getLeftNav() {
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		return leftNav.getHospitalLeftNav();
 	}
 }

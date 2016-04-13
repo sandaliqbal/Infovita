@@ -14,10 +14,11 @@ public class AppointmentPage extends PageBase {
 			"div.hsptls-dtrs-tab > span.pointer.trigger-doctor";
 	private String treatmentPkgTab = "#subpage-content > div.hsptls-cntr > div.doctors_block > div > " +
 			"div.hsptls-dtrs-cntr-hdr > div.hsptls-dtrs-tab > span.pointer.trigger-treatment";
-	private static String title = "Book Appointment With BuzzHospitals.com Appointment scheduling System";
+	private String title = "Book Appointment With BuzzHospitals.com Appointment scheduling System";
 	
 	public AppointmentPage(WebDriver driver) {
-		super(driver,title);	
+		super(driver);	
+		super.pageTitle = title;
 	}
 	
 	public void validatePage() {

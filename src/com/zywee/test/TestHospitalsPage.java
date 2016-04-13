@@ -1,9 +1,9 @@
 package com.zywee.test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.zywee.base.page.ListViewPage;
 import com.zywee.base.test.TestBase;
@@ -14,53 +14,52 @@ import com.zywee.pages.HospitalsDetailPage;
 import com.zywee.tools.WaitTool;
 
 
-public class TestBuzzHospitalsPage extends TestBase {
+public class TestHospitalsPage extends TestBase {
 
-	private static WebDriver driver;
-	private static ListViewHospitals hospitals;
+	private WebDriver driver;
+	private ListViewHospitals hospitals;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		init();
 		driver = super.driver;
 		hospitals = new ListViewHospitals(driver);
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.close();
 		driver.quit();
 	}
 	
 	@Test
-	public void testHospitalsPage() {
+	public void testHospitalsDetailPage() {
 		hospitals.open();
-		WaitTool.waitForPageLoad(driver);
-		checkJSErrors();
-		hospitals.validatePage();
-		//hospitals.clickAndVerifyGridView();
+		HospitalsDetailPage hospDetailPage = hospitals.clickHospitalName();
+		hospitals.open();
+		hospDetailPage = hospitals.clickViewMoreInfo();
+		//hospDetailPage.validatePage();
 	}
 	
 	@Test
-	public void testHospitalsDetailPage() {
+	public void testHospitalsAppointmentPage() {
 		hospitals.open();
-		WaitTool.waitForPageLoad(driver);
-		HospitalsDetailPage hospDetailPage = hospitals.gotoDetailPage();
-		hospDetailPage.validatePage();
+		AppointmentPage hospDetailPage = hospitals.clickBookAppointment();
+		//hospDetailPage.validatePage();
 	}
 	
 	@Test
 	public void testExpandCollapseLeftNav() {
 		hospitals.open();
-		WaitTool.waitForPageLoad(driver);
-		LeftNavPage.clickExpandCollapse();
-		LeftNavPage.selectMultiSpeciality();
+		LeftNavPage leftNav = hospitals.getLeftNav();
+		leftNav.collapseLeftNav();
+		leftNav.collapseLeftNav();
+		hospitals.doErrorValidation();
 	}
 	
-	@Test
+	
 	public void testLeftNavCategories() {
 		hospitals.open();
-		WaitTool.waitForPageLoad(driver);
 		LeftNavPage.selectMultiSpeciality();
 		LeftNavPage.unselectMultiSpeciality();
 		LeftNavPage.selectSuperSpeciality();
@@ -106,14 +105,13 @@ public class TestBuzzHospitalsPage extends TestBase {
 	@Test
 	public void testSortDropdown() {
 		hospitals.open();
-		WaitTool.waitForPageLoad(driver);
-		hospitals.sortOnCost();
-		hospitals.sortOnNameAsc();
-		hospitals.sortOnNameDesc();
-		hospitals.sortOnRating();
+		hospitals.sortByNameAsc();
+		hospitals.sortByOrder();
+		hospitals.sortByRating();
+		hospitals.doErrorValidation();
 	}
 	
-	@Test
+	
 	public void testAppointmentPage() {
 		hospitals.open();
 		WaitTool.waitForPageLoad(driver);

@@ -22,7 +22,7 @@ public abstract class SpecialityBase extends PageBase {
 	public abstract String getItems();
 	public abstract String getTitleText();
 	
-	protected void validate() {
+	public void validate() {
 		softAssert.assertTrue(title.isDisplayed(),"Title should be displayed");
 		softAssert.assertTrue(getSpecialityTitle().getText().trim().contains(getTitleText()),
 				"Title should contain " + getTitleText());

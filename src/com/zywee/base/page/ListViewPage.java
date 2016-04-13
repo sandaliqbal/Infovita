@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.zywee.pages.AppointmentPage;
 import com.zywee.pages.HospitalsDetailPage;
+import com.zywee.pages.ListViewHospitals;
 import com.zywee.pages.ZyweeHomePage;
 import com.zywee.tools.WaitTool;
 
@@ -21,8 +22,7 @@ public class ListViewPage extends PageBase {
 	protected By resultTitle = By.cssSelector("#content > div.container-fluid.Ab > div > div.col-sm-3.no_of_hosp");
 	protected By sortDropdown = By.cssSelector("#content > div.container-fluid.Ab > div > div.col-sm-9 > select");
 	
-	protected String items = "#content > div.container-fluid.HOSPITAL > div > " +
-			"div.col-xs-9.right-box > div.render > div";
+	protected By items = By.className("content-right");
 	protected String hospBlock = "#content > div.container-fluid.HOSPITAL > div > div.col-xs-9.right-box > " +
 			 "div.render > "+getBlockString()+" > ";	
 	protected String hospImage = hospBlock + "div:nth-child(3) > div.col-sm-4 > img";
@@ -129,7 +129,7 @@ public class ListViewPage extends PageBase {
 	
 	public List<ListViewPage> getResultList() {
 		List<ListViewPage> listViewHospitals = new ArrayList();
-		numItems = driver.findElements(By.cssSelector(items)).size();
+		numItems = driver.findElements(items).size();
 		for(int i=2;i<=numItems-2;i++) {
 			ListViewPage hosp = new ListViewPage(driver, i);
 			listViewHospitals.add(hosp);
@@ -151,20 +151,16 @@ public class ListViewPage extends PageBase {
 		WaitTool.waitForPageLoad(driver);
 		return new AppointmentPage(driver);
 	}
-	
-	public void sortOnCost() {
-		selectDropdown("Cost");
-	}
 
-	public void sortOnNameAsc() {
-		selectDropdown("A - Z");
+	public void sortByNameAsc() {
+		selectDropdown("A-Z");
 	}
 	
-	public void sortOnNameDesc() {
+	public void sortByOrder() {
 		selectDropdown("Sort By Order");
 	}
 	
-	public void sortOnRating() {
+	public void sortByRating() {
 		selectDropdown("Rating");
 	}
 		
@@ -172,9 +168,10 @@ public class ListViewPage extends PageBase {
 		Select dropdown = new Select(driver.findElement(sortDropdown));
 		dropdown.selectByVisibleText(visibleText);
 		WaitTool.waitForJQueryProcessing(driver, 30);
-		ListViewPage listView = new ListViewPage(driver);
+		ListViewPage listView = new ListViewHospitals(driver);
 		softAssert.assertNotNull(listView, "No result found");
-		softAssert.assertNotEquals(listView.getResultList().size(),0,"No hospitals found");
+		softAssert.assertNotEquals(listView.getResultList().size(),0,
+				"No result found for option: "+visibleText+" in class: "+this.getClass());
 		try {
 		    softAssert.assertAll();
 		} catch(AssertionError er) {

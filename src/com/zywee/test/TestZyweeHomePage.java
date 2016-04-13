@@ -12,12 +12,14 @@ import com.zywee.pages.ZyweeHomePage;
 
 public class TestZyweeHomePage extends TestBase {
 
-	private static WebDriver driver;
+	private WebDriver driver;
+	ZyweeHomePage zyweeHome;
 	
 	@BeforeMethod
 	public void setUp() throws Exception {
 		init();
 		driver = super.driver;
+		zyweeHome = new ZyweeHomePage(driver);
 	}
 	
 	@AfterMethod
@@ -28,7 +30,6 @@ public class TestZyweeHomePage extends TestBase {
 	
 	@Test
 	public void testHomePage() {
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		zyweeHome.validatePage();
 		zyweeHome.validateMenu();
@@ -39,34 +40,33 @@ public class TestZyweeHomePage extends TestBase {
 	
 	@Test
 	public void testSearchHospitals(){
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		ListViewPage hospitals = zyweeHome.clickSearchHospitals();
 		hospitals.validatePage();
+		hospitals.validateAll();
 		hospitals.doErrorValidation();
 	}
 	
 	@Test
 	public void testSearchDiagnostics(){
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		ListViewPage diagnostics = zyweeHome.clickSearchDiagnostics();
 		diagnostics.validatePage();
+		diagnostics.validateAll();
 		diagnostics.doErrorValidation();
 	}
 	
 	@Test
 	public void testSearchClinics(){
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		ListViewPage clinics = zyweeHome.clickSearchClinics();
 		clinics.validatePage();
+		clinics.validateAll();
 		clinics.doErrorValidation();
 	}
 	
 	@Test
 	public void testSearchPackages(){
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		ListViewPage packages = zyweeHome.clickSearchPackages();
 		packages.validatePage();
@@ -76,7 +76,6 @@ public class TestZyweeHomePage extends TestBase {
 	
 	@Test
 	public void testSearchDoctors(){
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		ListViewPage doctors = zyweeHome.clickSearchDoctors();
 		doctors.validatePage();
@@ -86,7 +85,6 @@ public class TestZyweeHomePage extends TestBase {
 	
 	@Test
 	public void testSearchTests(){
-		ZyweeHomePage zyweeHome = new ZyweeHomePage(driver);
 		zyweeHome.open();
 		ListViewPage tests = zyweeHome.clickSearchTests();
 		tests.validatePage();

@@ -24,7 +24,7 @@ public abstract class ChargeBase extends PageBase {
 		softAssert.assertTrue(title.getText().trim().contains(chargeHeading),
 				"Title should contain " + chargeHeading);
 		softAssert.assertTrue(chargeType.isDisplayed(),"Type of charge should be displayed");
-		softAssert.assertTrue(isElementPresent(By.cssSelector(chargeTypeText)),"Title of charge type should be displayed");
+		softAssert.assertTrue(chargeType.getText().contains(chargeTypeText),"Title of charge type should be displayed");
 		softAssert.assertTrue(collapseButton.isDisplayed(),"Expand/Collapse should be displayed");
 		softAssert.assertTrue(amount.isDisplayed(),"Charge amount should be displayed");
 		softAssert.assertTrue(slider.isDisplayed(),"Slider should be displayed");

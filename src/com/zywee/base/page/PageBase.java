@@ -38,13 +38,13 @@ public class PageBase {
 	  
 	  /** Expected Page Title.  This will be used in isPageLoad() 
 	   * to check if page is loaded. */
-	  protected static String pageTitle = "Find Hospitals, Diagnostics, Clinics, Doctors, Health Packages book online - Zywee"; 
+	  protected String pageTitle = "Find Hospitals, Diagnostics, Clinics, Doctors, Health Packages book online - Zywee"; 
 	  
 	  private List<String> brokenUrls = new ArrayList();
 	  
-	  protected static StringBuilder assertionErrors = new StringBuilder();
+	  protected StringBuilder assertionErrors = new StringBuilder();
 	  
-	  protected static SoftAssert softAssert = new SoftAssert();
+	  protected SoftAssert softAssert = new SoftAssert();
 	  
 	  
 	  /** Constructor */ 
@@ -52,16 +52,16 @@ public class PageBase {
 		  this.driver = driver; 
 	  }
 	  
-	  public PageBase(WebDriver driver, String pageTitle) {
+	  public PageBase(WebDriver driver, String title) {
 		  this.driver = driver; 
-		  this.pageTitle = pageTitle; 
+		  this.pageTitle = title; 
 	  }
 	  
 	  /** 
 	   * Check if page is loaded by comparing 
 	   * the expected page-title with an actual page-title. 
 	   **/ 
-	  public static boolean isPageLoad(){
+	  public boolean isPageLoad(){
 		  return (driver.getTitle().contains(pageTitle)); 
 	  }
 	  
@@ -221,9 +221,10 @@ public class PageBase {
             errors = errors.replaceAll("The following asserts failed:", "");
             Assert.fail("The following asserts failed: " + errors);
         }
+        assertionErrors.delete(0, errors.length());
     }
 	
-	public  static void addAssertionError(String msg) {
+	public  void addAssertionError(String msg) {
         if(assertionErrors.indexOf(msg) == -1) {
         	assertionErrors.append(msg);
         }

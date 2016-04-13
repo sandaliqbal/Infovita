@@ -68,6 +68,7 @@ public class ListViewClinics extends ListViewPage {
 		LeftNavPage leftNav = new LeftNavPage(driver);
 		leftNav = leftNav.getClinicLeftNav();
 		leftNav.selectFacility("Hearing Aid Servicing");
+		leftNav.collapseLeftNav();
 	}
 	
 	@Override
@@ -93,7 +94,7 @@ public class ListViewClinics extends ListViewPage {
 	@Override
 	public List<ListViewPage> getResultList() {
 		List<ListViewPage> listViewHospitals = new ArrayList();
-		numItems = driver.findElements(By.cssSelector(items)).size();
+		numItems = driver.findElements(items).size();
 		for(int i=1;i<=numItems;i++) {
 			ListViewPage hosp = new ListViewClinics(driver, i);
 			listViewHospitals.add(hosp);

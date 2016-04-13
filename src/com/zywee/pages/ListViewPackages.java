@@ -87,7 +87,7 @@ public class ListViewPackages extends ListViewPage {
 	@Override
 	public List<ListViewPage> getResultList() {
 		List<ListViewPage> resultList = new ArrayList();
-		numItems = driver.findElements(By.cssSelector(items)).size();
+		numItems = driver.findElements(items).size();
 		for(int i=2;i<=numItems;i+=2) {
 			ListViewPage pack = new ListViewPackages(driver, i);
 			resultList.add(pack);

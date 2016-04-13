@@ -45,6 +45,7 @@ public class LeftNavPage extends PageBase {
 	private static final String specialityCheckbox = specialityBlock + "div.content-module-main.cf > label";
 	
 	private WebElement hideButton = driver.findElement(By.cssSelector("#desktop_filter"));
+	private By sideBar = By.cssSelector("#sidebar");
 	private CenterTypePage centerType;// = new CenterTypePage(driver);
 	private ClinicChargePage clinicCharge;// = new ClinicChargePage(driver);
 	private DiagnosticChargePage diagCharge;// = new DiagnosticChargePage(driver);
@@ -68,6 +69,9 @@ public class LeftNavPage extends PageBase {
 		specialityPage = new SpecialityPage(driver);
 		hospCharge = new HospitalChargePage(driver);
 		facilityPage = new FacilityPage(driver);
+		specialityPage.validate();
+		hospCharge.validate();
+		facilityPage.validate();
 		return this;
 	}
 	
@@ -114,6 +118,11 @@ public class LeftNavPage extends PageBase {
 	
 	public void selectFacility(String facilityName) {
 		facilityPage.selectCheckboxes(facilityName);
+	}
+	
+	public void collapseLeftNav() {
+		hideButton.click();
+		//Assert.assertFalse("Side bar should  be hidden", isElementPresent(sideBar));
 	}
 	
 	public static void validateCategory() {
