@@ -9,10 +9,11 @@ import org.openqa.selenium.WebElement;
 
 import com.zywee.base.page.ListViewPage;
 import com.zywee.base.page.PageBase;
+import com.zywee.pages.ListViewHospitals;
 import com.zywee.tools.WaitTool;
 
 
-public class LeftNavPage extends PageBase {
+public class LeftNavPage extends ListViewPage {
 	
 	
 	private static final String catBlock = "#serarch-left > div:nth-child(1) > ";
@@ -110,14 +111,17 @@ public class LeftNavPage extends PageBase {
 	
 	public void selectSpeciality(String specialityName) {
 		specialityPage.selectCheckboxes(specialityName);
+		validateSelection(specialityName);
 	}
 	
 	public void selectCenterType(String centerTypeName) {
 		centerType.selectCheckboxes(centerTypeName);
+		validateSelection(centerTypeName);
 	}
 	
 	public void selectFacility(String facilityName) {
 		facilityPage.selectCheckboxes(facilityName);
+		validateSelection(facilityName);
 	}
 	
 	public void collapseLeftNav() {

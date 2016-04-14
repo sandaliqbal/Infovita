@@ -13,6 +13,7 @@ public class ListViewDiagnostics extends ListViewPage {
 	
 	public ListViewDiagnostics(WebDriver driver) {
 		super(driver);
+		URL = URL + "/bangalore/diagnostics-centres";
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -39,17 +40,17 @@ public class ListViewDiagnostics extends ListViewPage {
 	@Override
 	public void validatePage() {
 		super.validatePage();
-		softAssert.assertTrue(isElementPresent(hospImage),"Hospital Image not found");
-		softAssert.assertTrue(isElementPresent(hospName),"Hospital Name not found");
+		softAssert.assertTrue(isElementPresent(hospImage),"Diagnostic Image not found");
+		softAssert.assertTrue(isElementPresent(hospName),"Diagnostic Name not found");
 		String hospname = null;
 		try {
 			hospname = getText(hospName);
 		} catch (Exception ex) {
 			addAssertionError(ex.getMessage());
 		}
-		softAssert.assertTrue(isElementPresent(category),"Hospital category not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(location),"Hospital location not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(rating),"Hospital rating not found for " + hospname);
+		softAssert.assertTrue(isElementPresent(category),"Diagnostic category not found for " + hospname);
+		softAssert.assertTrue(isElementPresent(location),"Diagnostic location not found for " + hospname);
+		softAssert.assertTrue(isElementPresent(rating),"Diagnostic rating not found for " + hospname);
 		softAssert.assertTrue(isElementPresent(consultFee),"Consultation fee not found for " + hospname);
 		softAssert.assertTrue(isElementPresent(wardCharge),"Ward charge not found for " + hospname);
 		softAssert.assertTrue(isElementPresent(contact),"Contact number not found for " + hospname);
@@ -61,14 +62,6 @@ public class ListViewDiagnostics extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
-		/*
-		DiagnosticFacilityPage sp = new DiagnosticFacilityPage(driver);
-		sp.getCheckboxes();
-		sp.selectCheckboxes("C T Scan");*/
-		
-		LeftNavPage leftNav = new LeftNavPage(driver);
-		leftNav = leftNav.getDiagnosticLeftNav();
-		leftNav.selectFacility("C T Scan");
 	}
 	
 	@Override
@@ -85,5 +78,25 @@ public class ListViewDiagnostics extends ListViewPage {
 			listViewHospitals.add(hosp);
 		}
 		return listViewHospitals;
+	}
+	
+	public LeftNavPage getLeftNav() {
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		return leftNav.getDiagnosticLeftNav();
+	}
+	
+	public HospitalsDetailPage clickDiagnosticName() {
+		driver.findElement(By.cssSelector(hospName)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public HospitalsDetailPage clickViewMoreInfo() {
+		driver.findElement(By.cssSelector(viewMoreInfo)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public AppointmentPage clickBookAppointment() {
+		driver.findElement(By.cssSelector(bookNowButton)).click();
+		return new AppointmentPage(driver);
 	}
 }

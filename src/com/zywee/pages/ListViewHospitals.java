@@ -58,12 +58,6 @@ public class ListViewHospitals extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
-		/*FacilityPage sp = new FacilityPage(driver);
-		sp.getCheckboxes();
-		sp.selectCheckboxes("MRI");*/
-		LeftNavPage leftNav = new LeftNavPage(driver);
-		leftNav = leftNav.getHospitalLeftNav();
-		leftNav.selectSpeciality("Super Speciality");
 	}
 	
 	public HospitalsDetailPage clickHospitalName() {

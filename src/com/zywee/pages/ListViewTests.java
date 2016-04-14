@@ -7,12 +7,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.zywee.base.page.ListViewPage;
+import com.zywee.leftnav.LeftNavPage;
 
 public class ListViewTests extends ListViewPage {
 
 	public ListViewTests(WebDriver driver) {
 		super(driver);
 		setithItem(2);
+		URL = URL + "/bangalore/tests";
 	}
 	
 	public ListViewTests(WebDriver driver,int testNum) {
@@ -90,6 +92,21 @@ public class ListViewTests extends ListViewPage {
         } catch(AssertionError er) {
         	addAssertionError(er.getMessage());
         }
+	}
+	
+	public LeftNavPage getLeftNav() {
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		return leftNav.getTestLeftNav();
+	}
+	
+	public HospitalsDetailPage clickTestName() {
+		driver.findElement(By.cssSelector(testName)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public AppointmentPage clickBookAppointment() {
+		driver.findElement(By.cssSelector(bookNow)).click();
+		return new AppointmentPage(driver);
 	}
 
 }

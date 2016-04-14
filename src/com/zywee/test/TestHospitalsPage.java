@@ -44,7 +44,7 @@ public class TestHospitalsPage extends TestBase {
 	@Test
 	public void testHospitalsAppointmentPage() {
 		hospitals.open();
-		AppointmentPage hospDetailPage = hospitals.clickBookAppointment();
+		AppointmentPage appointPage = hospitals.clickBookAppointment();
 		//hospDetailPage.validatePage();
 	}
 	
@@ -57,9 +57,25 @@ public class TestHospitalsPage extends TestBase {
 		hospitals.doErrorValidation();
 	}
 	
-	
+	@Test
 	public void testLeftNavCategories() {
 		hospitals.open();
+		LeftNavPage leftNav = hospitals.getLeftNav();
+		leftNav.selectSpeciality("Multi Speciality");
+		leftNav.selectSpeciality("Multi Speciality");
+		leftNav.selectSpeciality("Super Speciality");
+		leftNav.selectSpeciality("Super Speciality");
+		leftNav.selectSpeciality("General");
+		leftNav.selectSpeciality("General");
+		leftNav.selectFacility("Ambulance Service");
+		leftNav.selectFacility("Ambulance Service");
+		leftNav.selectFacility("Blood Bank");
+		leftNav.selectFacility("Blood Bank");
+		leftNav.selectFacility("X-Ray");
+		leftNav.selectFacility("X-Ray");
+		hospitals.doErrorValidation();
+		
+		/*
 		LeftNavPage.selectMultiSpeciality();
 		LeftNavPage.unselectMultiSpeciality();
 		LeftNavPage.selectSuperSpeciality();
@@ -100,6 +116,7 @@ public class TestHospitalsPage extends TestBase {
 		LeftNavPage.unselectCardiac();
 		LeftNavPage.selectOrtho();
 		LeftNavPage.unselectOrtho();
+		*/
 	}
 	
 	@Test

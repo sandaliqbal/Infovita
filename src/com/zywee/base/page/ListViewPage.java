@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import com.zywee.leftnav.LeftNavPage;
 import com.zywee.pages.AppointmentPage;
 import com.zywee.pages.HospitalsDetailPage;
 import com.zywee.pages.ListViewHospitals;
@@ -168,10 +169,12 @@ public class ListViewPage extends PageBase {
 		Select dropdown = new Select(driver.findElement(sortDropdown));
 		dropdown.selectByVisibleText(visibleText);
 		WaitTool.waitForJQueryProcessing(driver, 30);
-		ListViewPage listView = new ListViewHospitals(driver);
-		softAssert.assertNotNull(listView, "No result found");
-		softAssert.assertNotEquals(listView.getResultList().size(),0,
-				"No result found for option: "+visibleText+" in class: "+this.getClass());
+		validateSelection(visibleText);
+	}
+	
+	protected void validateSelection(String choice) {
+		softAssert.assertNotEquals(getResultList().size(),0,
+				"No result found for option: "+choice+" in class: "+this.getClass());
 		try {
 		    softAssert.assertAll();
 		} catch(AssertionError er) {

@@ -10,7 +10,7 @@
 	<property name="result" location="result"/>
 	<property name="testng.templates" location="testng-templates"/>
 	<property name="tmp.dir" location="tmp"/>
-	<property name="class.names" value="com.zywee.test.TestZyweeHomePage,com.zywee.test.TestHospitalsPage"/>
+	<property name="class.names" value="com.zywee.test.TestZyweeHomePage,com.zywee.test.TestHospitalsPage,com.zywee.test.TestClinicsPage,com.zywee.test.TestDiagnosticsPage,com.zywee.test.TestDoctorsPage,com.zywee.test.TestPackagesPage,com.zywee.test.TestTestsPage"/>
 	<path id="classpathdef">
 		<fileset dir="${lib}" includes="*.jar" />
 		<pathelement location="bin"/>

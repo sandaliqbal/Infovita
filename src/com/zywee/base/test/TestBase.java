@@ -1,11 +1,10 @@
 package com.zywee.base.test;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +20,8 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+
 import com.zywee.tools.WaitTool;
 
 
@@ -38,6 +39,13 @@ public class TestBase {
 	protected WebDriver driver;
 	
 	protected static Map<String,String> propertyMap = new HashMap<String,String>();
+	
+	@BeforeMethod
+	public void setUp(Method method) throws Exception {	
+//		Logger logger = Logger.getLogger(method.getDeclaringClass());
+//		logger.setLevel(Level.INFO);
+		System.out.println("Executing: "+method.getDeclaringClass()+"."+method.getName());
+	}
 	
 	/** 
 	 * Initialize test properties ( WebDriver, implicitlyWait, and etc).  
@@ -68,8 +76,6 @@ public class TestBase {
 			propertyMap.put("baseUrl", prop.getProperty("baseUrl"));
 			propertyMap.put("browser", prop.getProperty("browser"));
 			propertyMap.put("platform", prop.getProperty("platform"));
-			System.out.println(prop.getProperty("baseUrl"));
-			System.out.println(prop.getProperty("browser"));
 			
 			if(propertyMap.get("browser").equals("firefox")) {
 				final FirefoxProfile profile = new FirefoxProfile();
@@ -79,6 +85,10 @@ public class TestBase {
 				DesiredCapabilities caps = new DesiredCapabilities();
                 caps.setJavascriptEnabled(true);  
 				setPhantomJsBinaryPath(caps);
+				String[] phantomArgs = new  String[] {
+					    "--webdriver-loglevel=NONE"
+					};
+				caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomArgs);
 				driver = new PhantomJSDriver(caps);
 			}
 			//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -114,37 +124,6 @@ public class TestBase {
 	public void setImplicitlyWaitTime(int waitTimeInSeconds){
 		driver.manage().timeouts().implicitlyWait(waitTimeInSeconds, TimeUnit.SECONDS); 
 	}
-	
-	public static void main(String[] args) {
-
-        BufferedReader br = null;
-
-        try {
-
-            String sCurrentLine;
-            String next;
-            
-            String dir = System.getProperty("user.dir");
-            br = new BufferedReader(new FileReader(dir+"/Users/i309187/Downloads/wtbox-master/src/wtbox/test/testing.txt"));
-            sCurrentLine = br.readLine();
-            System.out.print(sCurrentLine+"-");
-            while ((sCurrentLine = br.readLine()) != null) {
-                System.out.print(sCurrentLine);
-                System.out.println();
-                System.out.print(sCurrentLine+"-");
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (br != null)br.close();
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        }
-
-    }
 	
 	private void setPhantomJsBinaryPath(DesiredCapabilities caps) {
 		File file = new File("phantomjs/mac/bin/phantomjs");

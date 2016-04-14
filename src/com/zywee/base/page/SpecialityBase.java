@@ -5,6 +5,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import com.zywee.tools.WaitTool;
 
 public abstract class SpecialityBase extends PageBase {
 
@@ -42,9 +45,10 @@ public abstract class SpecialityBase extends PageBase {
 	}
 	
 	public void selectCheckboxes(String optionName) {
+		WebElement checkbox=null;
 		for(WebElement elt:list) {
 			if(elt.getText().equals(optionName)) {
-				WebElement checkbox = elt.findElement(By.tagName("input"));
+				checkbox = elt.findElement(By.tagName("input"));
 				checkbox.click();
 				softAssert.assertTrue(checkbox.isSelected(),"Checkbox should be selected");
 				try {
@@ -52,7 +56,12 @@ public abstract class SpecialityBase extends PageBase {
 				} catch(AssertionError er) {
 					addAssertionError(er.getMessage());
 				}
+				WaitTool.waitForJQueryProcessing(driver, 30);
+				break;
 			}
+		}
+		if (checkbox == null) {
+			Assert.fail(optionName+" option could not be found");
 		}
 	}
 	

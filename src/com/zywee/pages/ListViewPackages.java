@@ -20,6 +20,7 @@ public class ListViewPackages extends ListViewPage {
 	public ListViewPackages(WebDriver driver) {
 		super(driver);
 		setithItem(2);
+		URL = URL + "/bangalore/packages";
 	}
 	
 	public ListViewPackages(WebDriver driver,int packNum) {
@@ -113,14 +114,21 @@ public class ListViewPackages extends ListViewPage {
         } catch(AssertionError er) {
         	addAssertionError(er.getMessage());
         }
-        /*
-        CenterTypePage sp = new CenterTypePage(driver);
-		sp.getCheckboxes();
-		sp.selectCheckboxes("Diagnostics Centres");
-		*/
-		LeftNavPage leftNav = new LeftNavPage(driver);
-		leftNav = leftNav.getPackageLeftNav();
-		leftNav.selectCenterType("Diagnostics Centres");
 	}		
+	
+	public LeftNavPage getLeftNav() {
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		return leftNav.getPackageLeftNav();
+	}
+	
+	public HospitalsDetailPage clickPackageName() {
+		driver.findElement(By.cssSelector(packName)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public AppointmentPage clickBookAppointment() {
+		driver.findElement(By.cssSelector(getBookButton())).click();
+		return new AppointmentPage(driver);
+	}
 
 }

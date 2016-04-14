@@ -13,6 +13,7 @@ public class ListViewClinics extends ListViewPage {
 
 	public ListViewClinics(WebDriver driver) {
 		super(driver);
+		URL = URL + "/bangalore/clinics";
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -39,17 +40,17 @@ public class ListViewClinics extends ListViewPage {
 	@Override
 	public void validatePage() {
 		super.validatePage();
-		softAssert.assertTrue(isElementPresent(hospImage),"Hospital Image not found");
-		softAssert.assertTrue(isElementPresent(hospName),"Hospital Name not found");
+		softAssert.assertTrue(isElementPresent(hospImage),"Clinic Image not found");
+		softAssert.assertTrue(isElementPresent(hospName),"Clinic Name not found");
 		String hospname = null;
 		try {
 			hospname = getText(hospName);
 		} catch (Exception ex) {
 			addAssertionError(ex.getMessage());
 		}
-		softAssert.assertTrue(isElementPresent(category),"Hospital category not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(location),"Hospital location not found for " + hospname);
-		softAssert.assertTrue(isElementPresent(rating),"Hospital rating not found for " + hospname);
+		softAssert.assertTrue(isElementPresent(category),"Clinic category not found for " + hospname);
+		softAssert.assertTrue(isElementPresent(location),"Clinic location not found for " + hospname);
+		softAssert.assertTrue(isElementPresent(rating),"Clinic rating not found for " + hospname);
 		softAssert.assertTrue(isElementPresent(consultFee),"Consultation fee not found for " + hospname);
 		softAssert.assertTrue(isElementPresent(wardCharge),"Ward charge not found for " + hospname);
 		softAssert.assertTrue(isElementPresent(contact),"Contact number not found for " + hospname);
@@ -61,14 +62,6 @@ public class ListViewClinics extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
-		/*DiagnosticFacilityPage sp = new DiagnosticFacilityPage(driver);
-		sp.getCheckboxes();
-		sp.selectCheckboxes("Hearing Aid Servicing");*/
-		
-		LeftNavPage leftNav = new LeftNavPage(driver);
-		leftNav = leftNav.getClinicLeftNav();
-		leftNav.selectFacility("Hearing Aid Servicing");
-		leftNav.collapseLeftNav();
 	}
 	
 	@Override
@@ -100,5 +93,25 @@ public class ListViewClinics extends ListViewPage {
 			listViewHospitals.add(hosp);
 		}
 		return listViewHospitals;
+	}
+	
+	public LeftNavPage getLeftNav() {
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		return leftNav.getClinicLeftNav();
+	}
+	
+	public HospitalsDetailPage clickClinicName() {
+		driver.findElement(By.cssSelector(hospName)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public HospitalsDetailPage clickViewMoreInfo() {
+		driver.findElement(By.cssSelector(viewMoreInfo)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public AppointmentPage clickBookAppointment() {
+		driver.findElement(By.cssSelector(bookNowButton)).click();
+		return new AppointmentPage(driver);
 	}
 }

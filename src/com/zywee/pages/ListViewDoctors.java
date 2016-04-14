@@ -14,6 +14,7 @@ public class ListViewDoctors extends ListViewPage {
 	public ListViewDoctors(WebDriver driver) {
 		super(driver);
 		setithItem(1);
+		URL = URL + "/bangalore/doctors";
 	}
 	
 	public ListViewDoctors(WebDriver driver,int docNum) {
@@ -91,9 +92,9 @@ public class ListViewDoctors extends ListViewPage {
 		}
 		softAssert.assertTrue(isElementPresent(degree),"Doctor degree not found for " + docname);
 		softAssert.assertTrue(isElementPresent(speciality),"Doctor speciality not found for " + docname);
-		softAssert.assertTrue(isElementPresent(getRating()),"Dcotor rating not found for " + docname);
-		softAssert.assertTrue(isElementPresent(getEntityName()),"Dcotor association not found for " + docname);
-		softAssert.assertTrue(isElementPresent(getLocation()),"Dcotor location not found for " + docname);
+		softAssert.assertTrue(isElementPresent(getRating()),"Doctor rating not found for " + docname);
+		softAssert.assertTrue(isElementPresent(getEntityName()),"Doctor association not found for " + docname);
+		softAssert.assertTrue(isElementPresent(getLocation()),"Doctor location not found for " + docname);
 		softAssert.assertTrue(isElementPresent(fee),"Consultation fee not found for " + docname);
 		softAssert.assertTrue(isElementPresent(qualification),"Qualification not found for " + docname);
 		softAssert.assertTrue(isElementPresent(experience),"Experience not found for " + docname);
@@ -104,14 +105,6 @@ public class ListViewDoctors extends ListViewPage {
 		} catch(AssertionError er) {
 			addAssertionError(er.getMessage());
 		}
-		/*
-		CenterTypePage sp = new CenterTypePage(driver);
-		sp.getCheckboxes();
-		sp.selectCheckboxes("Clinics");*/
-		
-		LeftNavPage leftNav = new LeftNavPage(driver);
-		leftNav = leftNav.getDoctorLeftNav();
-		leftNav.selectCenterType("Clinics");
 	}
 	
 	@Override
@@ -123,5 +116,20 @@ public class ListViewDoctors extends ListViewPage {
 			resultList.add(doc);
 		}
 		return resultList;
+	}
+	
+	public LeftNavPage getLeftNav() {
+		LeftNavPage leftNav = new LeftNavPage(driver);
+		return leftNav.getDoctorLeftNav();
+	}
+	
+	public HospitalsDetailPage clickDoctorName() {
+		driver.findElement(By.cssSelector(docName)).click();
+		return new HospitalsDetailPage(driver);
+	}
+	
+	public AppointmentPage clickBookAppointment() {
+		driver.findElement(By.cssSelector(bookNow)).click();
+		return new AppointmentPage(driver);
 	}
 }
