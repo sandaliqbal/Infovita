@@ -1,36 +1,33 @@
 package com.zywee.test;
 
-import java.util.List;
-import net.jsourcerer.webdriver.jserrorcollector.JavaScriptError;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import com.zywee.base.test.TestBase;
 import com.zywee.pages.HospitalsDetailPage;
 import com.zywee.pages.ListViewHospitals;
-import com.zywee.tools.WaitTool;
 
 
 public class TestHospitalDetailPage extends TestBase {
 
-    private static WebDriver driver;
-    private static ListViewHospitals hospitals;
-    private static HospitalsDetailPage hospitalDetail;
+    private WebDriver driver;
+    private ListViewHospitals hospitals;
+    private HospitalsDetailPage hospitalDetail;
 
-    @Before
+    @BeforeMethod
     public void setUp() throws Exception {
         init();
         driver = super.driver;
         hospitals = new ListViewHospitals(driver);
         hospitals.open();
-        WaitTool.waitForPageLoad(driver);
         hospitalDetail = hospitals.gotoDetailPage();
     }
 
-    @After
+    @AfterMethod
     public void tearDown() throws Exception {
-        List<JavaScriptError> jsErrors = JavaScriptError.readErrors(driver);
+        /*List<JavaScriptError> jsErrors = JavaScriptError.readErrors(driver);
         System.out.println("###start displaying errors");
         for(int i = 0; i < jsErrors.size(); i++)
         {
@@ -38,23 +35,44 @@ public class TestHospitalDetailPage extends TestBase {
         System.out.println(jsErrors.get(i).getLineNumber());
         System.out.println(jsErrors.get(i).getSourceName());
         }
-        System.out.println("###stop displaying errors");
+        System.out.println("###stop displaying errors");*/
         driver.close(); 
         driver.quit();
     }
     
     @Test
-    public void testInformationTab() {
-        hospitalDetail.validatePage();
-        checkJSErrors();
+    public void testBookAppointment() {
+        hospitalDetail.bookAddressAppointment();
     }
     
     @Test
     public void testAllTabs() {
         hospitalDetail.clickSpecialists();
+        hospitalDetail.clickPackages();
         hospitalDetail.clickFacilities();
-        hospitalDetail.clickRoomTariff();
-        hospitalDetail.clickTreatmentPackages();
-        hospitalDetail.clickInsurance();
+        hospitalDetail.clickReviews();
+        hospitalDetail.clickOverview();
+    }
+    
+    @Test
+    public void testBackButton() {
+    	hospitalDetail.goBack();
+    	hospitals.validatePage();
+    }
+    
+    @Test
+    public void testSpecialist() {
+    	hospitalDetail.clickSpecialists();
+    	hospitalDetail.testSpecialists();
+    }
+    
+    @Test
+    public void testRooms() {
+    	hospitalDetail.testRooms();
+    }
+    
+    @Test
+    public void testReviews() {
+    	hospitalDetail.testReviews();
     }
 }

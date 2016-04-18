@@ -5,10 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+
+import com.zywee.base.page.DetailPage;
 import com.zywee.base.page.PageBase;
 
 
-public class HospitalsDetailPage extends PageBase {
+public class HospitalsDetailPage extends DetailPage {
 	
 	private static final String hospName = "#search-headr > div.search-view-title > div.single-view-name";
 	private static final String contactEmergency = "#cont-info > strong:nth-child(1)";
@@ -100,40 +102,6 @@ public class HospitalsDetailPage extends PageBase {
 		Assert.assertTrue(isElementPresent(newsEvent));
 		ZyweeHomePage.validateFooter();
 	}
-	
-	public void clickSpecialists() {
-	    Assert.assertTrue(isElementPresent(specialistTab));
-	    driver.findElement(By.cssSelector(specialistTab)).click();
-	    Assert.assertTrue(isElementPresent(specialization));
-	    Assert.assertTrue(isElementPresent(specialists));
-	}
-	
-	public void clickFacilities() {
-        Assert.assertTrue(isElementPresent(facilitiesTab));
-        driver.findElement(By.cssSelector(facilitiesTab)).click();
-        Assert.assertTrue(isElementPresent(facilityDetails));
-    }
-	
-	public void clickRoomTariff() {
-        Assert.assertTrue(isElementPresent(roomTariffTab));
-        driver.findElement(By.cssSelector(roomTariffTab)).click();
-        Assert.assertTrue(isElementPresent(roomTariff));
-        Assert.assertTrue(isElementPresent(roomTypes));
-    }
-	
-	public void clickTreatmentPackages() {
-        Assert.assertTrue(isElementPresent(treatPkgTab));
-        driver.findElement(By.cssSelector(treatPkgTab)).click();
-        Assert.assertTrue(isElementPresent(roomTariff));
-        //Assert.assertEquals(getText(roomTariff), treatmentPkgTariffTxt);
-    }
-	
-	public void clickInsurance() {
-        Assert.assertTrue(isElementPresent(insuranceTab));
-        driver.findElement(By.cssSelector(insuranceTab)).click();
-        Assert.assertTrue(isElementPresent(roomTariff));
-        //Assert.assertEquals(getText(roomTypes), insuranceTxt);
-    }
 	
 	public void verifyThumbImages(String locator) {
 	    int numImages = getCssCount(locator);
