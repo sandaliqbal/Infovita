@@ -33,10 +33,10 @@ public class ZyweeHomePage extends PageBase{
 	private final static By searchButtonDoc = By.cssSelector("#search_query_doc");
 	private final static By searchButtonTest = By.cssSelector("#search_query_test");
 	
-	private final static By headerLogo =By.cssSelector("#header > div:nth-child(3) > div > div.col-sm-4 > img");
+	private final static By headerLogo =By.xpath("//img[@src='/img/images/zywee_logo.png']");
 	private final static By helpline = By.cssSelector("#header > div.container-fluid.top-bar > div > span > span.text1.top_text_margin");
 	private final static By emergency = By.cssSelector("#header > div.container-fluid.top-bar > div > span > span.review_heading");
-	private final static By cityDropdown = By.cssSelector("#header > div:nth-child(3) > div > div.col-sm-8 > div > ul > li > select");
+	private final static By cityDropdown = By.cssSelector("#header > div > div > div.col-sm-8 > div > ul > li > select");
 	private final static By menuButton = By.cssSelector("#menu");
 	
 	private final static By mostViewedhospitalsLink = By.cssSelector("#content > div:nth-child(5)");
@@ -45,22 +45,25 @@ public class ZyweeHomePage extends PageBase{
 	private final static By doctorsLink = By.cssSelector("#content > div:nth-child(11)");
 	
 	private final static By aboutUsLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(2) > ul > li > span");
-	private final static By fbLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(5) > ul > li:nth-child(1) > span");
-	private final static By twitLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(5) > ul > li:nth-child(2) > span");
-	private final static By googLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(5) > ul > li:nth-child(3) > span");
-	private final static By blogLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(5) > ul > li:nth-child(4) > span > a");
+	private final static By fbLink = By.xpath("//img[@src='/img/images/facebook.png']");//cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(5) > ul > li:nth-child(1) > span");
+	private final static By twitLink = By.xpath("//div[@id='footer']//ul//li//span//img[@src='/img/images/twitter.png']");//By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(1) > div:nth-child(5) > ul > li:nth-child(2) > span");
+	private final static By googLink = By.xpath("//div[@id='footer']//ul//li//span//img[@src='/img/images/google.png']");
+	private final static By blogLink = By.cssSelector("#footer > div > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > ul > li.top_blog > span > img");
 	private final static By findHospLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1) > span");
 	private final static By findDocLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > span");
 	private final static By findClinicLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > span");
 	private final static By findDiagnosticLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) > span");
-	private final static By findTreatmentLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(5) > span");
-	private final static By findMedTestLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(6) > span");
+	private final static By findTreatmentLink = By.cssSelector("#footer > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(5) > span");
+	private final static By findMedTestLink = By.cssSelector("#footer > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(6) > span");
+	private final static By findTransportLink = By.cssSelector("#footer > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(7) > span");
+	private final static By findEquipmentLink = By.cssSelector("#footer > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(8) > span");
+	private final static By findHomeServicesLink = By.cssSelector("#footer > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul > li:nth-child(9) > span");
 	private final static By addHospLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(3) > div:nth-child(2) > ul > li:nth-child(1) > span");
 	private final static By advertizeLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(3) > div:nth-child(2) > ul > li:nth-child(2) > span");
-	private final static By termsLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(3) > div:nth-child(5) > ul > li:nth-child(1) > span");
-	private final static By privacyLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(3) > div:nth-child(5) > ul > li:nth-child(2) > span");
+	private final static By termsLink = By.cssSelector("#footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(1) > span");
+	private final static By privacyLink = By.cssSelector("#footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > span");
 	private final static By certLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(3) > div:nth-child(6) > div > a > img");
-	private final static By footerTM = By.cssSelector("#footer > div:nth-child(3) > div > p");
+	private final static By footerTM = By.cssSelector("body > div.container-fluid > div > p");
 	
 	private final static By facebookLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(1) > span > img");
 	private final static By gplusLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(2) > span > img");
@@ -145,11 +148,15 @@ public class ZyweeHomePage extends PageBase{
 	    Assert.assertTrue(isElementPresent(findDiagnosticLink),"Find Diagnostic Centers link in footer not found");
 	    Assert.assertTrue(isElementPresent(findTreatmentLink),"Find Treatment Packages link in footer not found");
 	    Assert.assertTrue(isElementPresent(findMedTestLink),"Find Medical Tests link in footer not found");
+	    Assert.assertTrue(isElementPresent(findTransportLink),"Find Transport link in footer not found"); 
+	    Assert.assertTrue(isElementPresent(findEquipmentLink),"Find Equipment link in footer not found");
+	    Assert.assertTrue(isElementPresent(findHomeServicesLink),"Find Home Services link in footer not found");
+	  
 	    Assert.assertTrue(isElementPresent(addHospLink),"Add hospital link in footer not found");
 	    Assert.assertTrue(isElementPresent(advertizeLink),"Advertize link in footer not found");
 	    Assert.assertTrue(isElementPresent(termsLink),"Terms of Use link in footer not found");
 	    Assert.assertTrue(isElementPresent(privacyLink),"Privacy link in footer not found");
-	    Assert.assertTrue(isElementPresent(certLink),"Certificate link in footer not found");
+	    // TODO: Check Assert.assertTrue(isElementPresent(certLink),"Certificate link in footer not found");
 	    Assert.assertTrue(isElementPresent(footerTM),"Trademark in footer not found");
 	    /*
 		for (Map.Entry<String, String> entry : footerLinks.entrySet())
