@@ -136,6 +136,9 @@ public class TestBase {
 		} else if(propertyMap.get("platform").equals("linux_32")) {
 			file = new File("phantomjs/linux32/bin/phantomjs");
 			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
+		} else if(propertyMap.get("platform").equals("windows")) {
+			file = new File("phantomjs/windows/bin/phantomjs.exe");
+			System.setProperty("phantomjs.binary.path", file.getAbsolutePath()); 
 		}		
 		caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, file.getAbsolutePath());
 	}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.zywee.test.TestDiagnosticsPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestDiagnosticsPage -->
+      <class name="com.zywee.test.TestDoctorsPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testDoctorDetailPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestDoctorsPage -->
+      <class name="com.zywee.test.TestHospitalDetailPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="testReviews"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestHospitalDetailPage -->
+      <class name="com.zywee.test.TestPackagesPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="testPackageDetailPage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestPackagesPage -->
+      <class name="com.zywee.test.TestHospitalsPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestHospitalsPage -->
+      <class name="com.zywee.test.TestZyweeHomePage">
+        <methods>
+          <include name="testSearchTests"/>
+          <include name="testSearchHospitals"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="testSearchClinics"/>
+          <include name="testSearchPackages"/>
+          <include name="testSearchDoctors"/>
+          <include name="testHomePage"/>
+          <include name="tearDown"/>
+          <include name="testSearchDiagnostics"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestZyweeHomePage -->
+      <class name="com.zywee.test.TestClinicsPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestClinicsPage -->
+      <class name="com.zywee.test.TestTestsPage">
+        <methods>
+          <include name="testTestDetailPage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zywee.test.TestTestsPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="11" total="42" passed="31">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1171138" started-at="2016-08-05T04:38:10Z" finished-at="2016-08-05T04:57:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1171138" started-at="2016-08-05T04:38:10Z" finished-at="2016-08-05T04:57:42Z">
+      <class name="com.zywee.test.TestClinicsPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:22:50Z" finished-at="2016-08-05T10:22:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestClinicsPage.testClinicsAppointmentPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="4068" started-at="2016-08-05T10:22:50Z" finished-at="2016-08-05T10:22:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testClinicsAppointmentPage()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="testClinicsAppointmentPage" duration-ms="16556" started-at="2016-08-05T10:22:54Z" finished-at="2016-08-05T10:23:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClinicsAppointmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="tearDown" is-config="true" duration-ms="1288" started-at="2016-08-05T10:23:11Z" finished-at="2016-08-05T10:23:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:23:12Z" finished-at="2016-08-05T10:23:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestClinicsPage.testClinicsDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="3567" started-at="2016-08-05T10:23:12Z" finished-at="2016-08-05T10:23:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testClinicsDetailPage()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="testClinicsDetailPage" duration-ms="34103" started-at="2016-08-05T10:23:15Z" finished-at="2016-08-05T10:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClinicsDetailPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="tearDown" is-config="true" duration-ms="1171" started-at="2016-08-05T10:23:50Z" finished-at="2016-08-05T10:23:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:23:51Z" finished-at="2016-08-05T10:23:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestClinicsPage.testExpandCollapseLeftNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="3565" started-at="2016-08-05T10:23:51Z" finished-at="2016-08-05T10:23:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExpandCollapseLeftNav()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="testExpandCollapseLeftNav" duration-ms="12384" started-at="2016-08-05T10:23:54Z" finished-at="2016-08-05T10:24:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpandCollapseLeftNav -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="tearDown" is-config="true" duration-ms="1167" started-at="2016-08-05T10:24:07Z" finished-at="2016-08-05T10:24:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:24:08Z" finished-at="2016-08-05T10:24:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestClinicsPage.testLeftNavCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="4074" started-at="2016-08-05T10:24:08Z" finished-at="2016-08-05T10:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLeftNavCategories()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="testLeftNavCategories" duration-ms="21400" started-at="2016-08-05T10:24:12Z" finished-at="2016-08-05T10:24:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLeftNavCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="tearDown" is-config="true" duration-ms="1157" started-at="2016-08-05T10:24:33Z" finished-at="2016-08-05T10:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:24:35Z" finished-at="2016-08-05T10:24:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestClinicsPage.testSortDropdown()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="setUp" is-config="true" duration-ms="4065" started-at="2016-08-05T10:24:35Z" finished-at="2016-08-05T10:24:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSortDropdown()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="testSortDropdown" duration-ms="16721" started-at="2016-08-05T10:24:39Z" finished-at="2016-08-05T10:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDropdown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestClinicsPage@675d3402]" name="tearDown" is-config="true" duration-ms="1158" started-at="2016-08-05T10:24:55Z" finished-at="2016-08-05T10:24:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestClinicsPage -->
+      <class name="com.zywee.test.TestDiagnosticsPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:24:56Z" finished-at="2016-08-05T10:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDiagnosticsPage.testDiagnosticsAppointmentPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="4090" started-at="2016-08-05T10:24:56Z" finished-at="2016-08-05T10:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDiagnosticsAppointmentPage()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="testDiagnosticsAppointmentPage" duration-ms="18049" started-at="2016-08-05T10:25:01Z" finished-at="2016-08-05T10:25:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDiagnosticsAppointmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="tearDown" is-config="true" duration-ms="1286" started-at="2016-08-05T10:25:19Z" finished-at="2016-08-05T10:25:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:25:20Z" finished-at="2016-08-05T10:25:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDiagnosticsPage.testDiagnosticsDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="4085" started-at="2016-08-05T10:25:20Z" finished-at="2016-08-05T10:25:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDiagnosticsDetailPage()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="testDiagnosticsDetailPage" duration-ms="63523" started-at="2016-08-05T10:25:24Z" finished-at="2016-08-05T10:26:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDiagnosticsDetailPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="tearDown" is-config="true" duration-ms="1174" started-at="2016-08-05T10:26:28Z" finished-at="2016-08-05T10:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:26:29Z" finished-at="2016-08-05T10:26:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDiagnosticsPage.testExpandCollapseLeftNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="4067" started-at="2016-08-05T10:26:29Z" finished-at="2016-08-05T10:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExpandCollapseLeftNav()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="testExpandCollapseLeftNav" duration-ms="12861" started-at="2016-08-05T10:26:33Z" finished-at="2016-08-05T10:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpandCollapseLeftNav -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="tearDown" is-config="true" duration-ms="1157" started-at="2016-08-05T10:26:46Z" finished-at="2016-08-05T10:26:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:26:47Z" finished-at="2016-08-05T10:26:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDiagnosticsPage.testLeftNavCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="4062" started-at="2016-08-05T10:26:47Z" finished-at="2016-08-05T10:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLeftNavCategories()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="testLeftNavCategories" duration-ms="26100" started-at="2016-08-05T10:26:51Z" finished-at="2016-08-05T10:27:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLeftNavCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="tearDown" is-config="true" duration-ms="739" started-at="2016-08-05T10:27:17Z" finished-at="2016-08-05T10:27:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:27:18Z" finished-at="2016-08-05T10:27:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDiagnosticsPage.testSortDropdown()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="setUp" is-config="true" duration-ms="4067" started-at="2016-08-05T10:27:18Z" finished-at="2016-08-05T10:27:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSortDropdown()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="testSortDropdown" duration-ms="18669" started-at="2016-08-05T10:27:22Z" finished-at="2016-08-05T10:27:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDropdown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDiagnosticsPage@100fc185]" name="tearDown" is-config="true" duration-ms="1149" started-at="2016-08-05T10:27:40Z" finished-at="2016-08-05T10:27:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestDiagnosticsPage -->
+      <class name="com.zywee.test.TestTestsPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:14:10Z" finished-at="2016-08-05T10:14:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestTestsPage.testAppointmentPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="4105" started-at="2016-08-05T10:14:10Z" finished-at="2016-08-05T10:14:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAppointmentPage()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="testAppointmentPage" duration-ms="20223" started-at="2016-08-05T10:14:14Z" finished-at="2016-08-05T10:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppointmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="tearDown" is-config="true" duration-ms="1154" started-at="2016-08-05T10:14:34Z" finished-at="2016-08-05T10:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="4093" started-at="2016-08-05T10:14:35Z" finished-at="2016-08-05T10:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:14:35Z" finished-at="2016-08-05T10:14:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestTestsPage.testExpandCollapseLeftNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExpandCollapseLeftNav()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="testExpandCollapseLeftNav" duration-ms="13212" started-at="2016-08-05T10:14:39Z" finished-at="2016-08-05T10:14:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpandCollapseLeftNav -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="tearDown" is-config="true" duration-ms="1156" started-at="2016-08-05T10:14:53Z" finished-at="2016-08-05T10:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:14:54Z" finished-at="2016-08-05T10:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestTestsPage.testSortDropdown()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="4080" started-at="2016-08-05T10:14:54Z" finished-at="2016-08-05T10:14:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSortDropdown()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="testSortDropdown" duration-ms="15832" started-at="2016-08-05T10:14:58Z" finished-at="2016-08-05T10:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDropdown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="tearDown" is-config="true" duration-ms="1160" started-at="2016-08-05T10:15:14Z" finished-at="2016-08-05T10:15:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:15:15Z" finished-at="2016-08-05T10:15:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestTestsPage.testTestDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="setUp" is-config="true" duration-ms="4110" started-at="2016-08-05T10:15:15Z" finished-at="2016-08-05T10:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testTestDetailPage()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="testTestDetailPage" duration-ms="15450" started-at="2016-08-05T10:15:19Z" finished-at="2016-08-05T10:15:34Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:45157","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/69661bb0-5ac7-11e6-9790-8da957be8c5c/element"}}
+Command duration or timeout: 3.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69661bb0-5ac7-11e6-9790-8da957be8c5c
+*** Element info: {Using=css selector, value=#Overview > div:nth-child(2) > div:nth-child(1) > div > img}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:45157","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/69661bb0-5ac7-11e6-9790-8da957be8c5c/element"}}
+Command duration or timeout: 3.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69661bb0-5ac7-11e6-9790-8da957be8c5c
+*** Element info: {Using=css selector, value=#Overview > div:nth-child(2) > div:nth-child(1) > div > img}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.zywee.base.page.OverviewTab.<init>(OverviewTab.java:17)
+	at com.zywee.base.page.DetailPage$1.<init>(DetailPage.java:11)
+	at com.zywee.base.page.DetailPage.<init>(DetailPage.java:11)
+	at com.zywee.pages.HospitalsDetailPage.<init>(HospitalsDetailPage.java:61)
+	at com.zywee.pages.ListViewTests.clickTestName(ListViewTests.java:104)
+	at com.zywee.test.TestTestsPage.testTestDetailPage(TestTestsPage.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:45157","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/69661bb0-5ac7-11e6-9790-8da957be8c5c/element"}}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTestDetailPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestTestsPage@1593948d]" name="tearDown" is-config="true" duration-ms="1250" started-at="2016-08-05T10:15:34Z" finished-at="2016-08-05T10:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestTestsPage -->
+      <class name="com.zywee.test.TestHospitalDetailPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="30" started-at="2016-08-05T10:08:10Z" finished-at="2016-08-05T10:08:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalDetailPage.testAllTabs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="40107" started-at="2016-08-05T10:08:11Z" finished-at="2016-08-05T10:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAllTabs()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="testAllTabs" duration-ms="939" started-at="2016-08-05T10:08:51Z" finished-at="2016-08-05T10:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllTabs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="tearDown" is-config="true" duration-ms="1216" started-at="2016-08-05T10:08:52Z" finished-at="2016-08-05T10:08:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:08:53Z" finished-at="2016-08-05T10:08:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalDetailPage.testBackButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="33898" started-at="2016-08-05T10:08:53Z" finished-at="2016-08-05T10:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBackButton()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="testBackButton" duration-ms="6848" started-at="2016-08-05T10:09:27Z" finished-at="2016-08-05T10:09:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="tearDown" is-config="true" duration-ms="1209" started-at="2016-08-05T10:09:34Z" finished-at="2016-08-05T10:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:09:35Z" finished-at="2016-08-05T10:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalDetailPage.testBookAppointment()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="32408" started-at="2016-08-05T10:09:35Z" finished-at="2016-08-05T10:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBookAppointment()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="testBookAppointment" duration-ms="3851" started-at="2016-08-05T10:10:07Z" finished-at="2016-08-05T10:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookAppointment -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="tearDown" is-config="true" duration-ms="1480" started-at="2016-08-05T10:10:11Z" finished-at="2016-08-05T10:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="31246" started-at="2016-08-05T10:10:13Z" finished-at="2016-08-05T10:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:10:13Z" finished-at="2016-08-05T10:10:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalDetailPage.testReviews()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testReviews()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="testReviews" duration-ms="2844" started-at="2016-08-05T10:10:44Z" finished-at="2016-08-05T10:10:47Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with css selector 'div.col-md-3 > div:nth-child(1) > span'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"109","Content-Type":"application/json; charset=utf-8","Host":"localhost:21240","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1470372041589\",\"using\":\"css selector\",\"value\":\"div.col-md-3 \\u003e div:nth-child(1) \\u003e span\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/b526c460-5ac6-11e6-a3d7-559b99f11a79/element/:wdc:1470372041589/element"}}
+Command duration or timeout: 2.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b526c460-5ac6-11e6-a3d7-559b99f11a79
+*** Element info: {Using=css selector, value=div.col-md-3 > div:nth-child(1) > span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector 'div.col-md-3 > div:nth-child(1) > span'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"109","Content-Type":"application/json; charset=utf-8","Host":"localhost:21240","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1470372041589\",\"using\":\"css selector\",\"value\":\"div.col-md-3 \\u003e div:nth-child(1) \\u003e span\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/b526c460-5ac6-11e6-a3d7-559b99f11a79/element/:wdc:1470372041589/element"}}
+Command duration or timeout: 2.21 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b526c460-5ac6-11e6-a3d7-559b99f11a79
+*** Element info: {Using=css selector, value=div.col-md-3 > div:nth-child(1) > span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByCssSelector(RemoteWebElement.java:236)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
+	at com.zywee.base.page.ReviewsTab.testReviews(ReviewsTab.java:30)
+	at com.zywee.base.page.DetailPage.testReviews(DetailPage.java:103)
+	at com.zywee.test.TestHospitalDetailPage.testReviews(TestHospitalDetailPage.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 33 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector 'div.col-md-3 > div:nth-child(1) > span'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"109","Content-Type":"application/json; charset=utf-8","Host":"localhost:21240","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1470372041589\",\"using\":\"css selector\",\"value\":\"div.col-md-3 \\u003e div:nth-child(1) \\u003e span\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/b526c460-5ac6-11e6-a3d7-559b99f11a79/element/:wdc:1470372041589/element"}}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReviews -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="tearDown" is-config="true" duration-ms="1171" started-at="2016-08-05T10:10:49Z" finished-at="2016-08-05T10:10:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:10:51Z" finished-at="2016-08-05T10:10:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalDetailPage.testRooms()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="28745" started-at="2016-08-05T10:10:51Z" finished-at="2016-08-05T10:11:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRooms()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="testRooms" duration-ms="216" started-at="2016-08-05T10:11:19Z" finished-at="2016-08-05T10:11:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRooms -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="tearDown" is-config="true" duration-ms="1183" started-at="2016-08-05T10:11:19Z" finished-at="2016-08-05T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:11:21Z" finished-at="2016-08-05T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalDetailPage.testSpecialist()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="setUp" is-config="true" duration-ms="29078" started-at="2016-08-05T10:11:21Z" finished-at="2016-08-05T10:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSpecialist()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="testSpecialist" duration-ms="1903" started-at="2016-08-05T10:11:50Z" finished-at="2016-08-05T10:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpecialist -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalDetailPage@548a9f61]" name="tearDown" is-config="true" duration-ms="1194" started-at="2016-08-05T10:11:52Z" finished-at="2016-08-05T10:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestHospitalDetailPage -->
+      <class name="com.zywee.test.TestPackagesPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:11:53Z" finished-at="2016-08-05T10:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestPackagesPage.testExpandCollapseLeftNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="4099" started-at="2016-08-05T10:11:53Z" finished-at="2016-08-05T10:11:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExpandCollapseLeftNav()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="testExpandCollapseLeftNav" duration-ms="18577" started-at="2016-08-05T10:11:57Z" finished-at="2016-08-05T10:12:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpandCollapseLeftNav -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="tearDown" is-config="true" duration-ms="1162" started-at="2016-08-05T10:12:16Z" finished-at="2016-08-05T10:12:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:12:17Z" finished-at="2016-08-05T10:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestPackagesPage.testLeftNavCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="4083" started-at="2016-08-05T10:12:17Z" finished-at="2016-08-05T10:12:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLeftNavCategories()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="testLeftNavCategories" duration-ms="32995" started-at="2016-08-05T10:12:21Z" finished-at="2016-08-05T10:12:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLeftNavCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="tearDown" is-config="true" duration-ms="1164" started-at="2016-08-05T10:12:54Z" finished-at="2016-08-05T10:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:12:55Z" finished-at="2016-08-05T10:12:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestPackagesPage.testPackageAppointmentPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="4092" started-at="2016-08-05T10:12:55Z" finished-at="2016-08-05T10:12:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testPackageAppointmentPage()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="testPackageAppointmentPage" duration-ms="19498" started-at="2016-08-05T10:12:59Z" finished-at="2016-08-05T10:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPackageAppointmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="tearDown" is-config="true" duration-ms="1161" started-at="2016-08-05T10:13:19Z" finished-at="2016-08-05T10:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:13:20Z" finished-at="2016-08-05T10:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestPackagesPage.testPackageDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="4097" started-at="2016-08-05T10:13:20Z" finished-at="2016-08-05T10:13:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testPackageDetailPage()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="testPackageDetailPage" duration-ms="20032" started-at="2016-08-05T10:13:24Z" finished-at="2016-08-05T10:13:44Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:30422","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/24b9d8d0-5ac7-11e6-a586-d963a73e624a/element"}}
+Command duration or timeout: 3.77 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 24b9d8d0-5ac7-11e6-a586-d963a73e624a
+*** Element info: {Using=css selector, value=#Overview > div:nth-child(2) > div:nth-child(1) > div > img}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:30422","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/24b9d8d0-5ac7-11e6-a586-d963a73e624a/element"}}
+Command duration or timeout: 3.77 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 24b9d8d0-5ac7-11e6-a586-d963a73e624a
+*** Element info: {Using=css selector, value=#Overview > div:nth-child(2) > div:nth-child(1) > div > img}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.zywee.base.page.OverviewTab.<init>(OverviewTab.java:17)
+	at com.zywee.base.page.DetailPage$1.<init>(DetailPage.java:11)
+	at com.zywee.base.page.DetailPage.<init>(DetailPage.java:11)
+	at com.zywee.pages.HospitalsDetailPage.<init>(HospitalsDetailPage.java:61)
+	at com.zywee.pages.ListViewPackages.clickPackageName(ListViewPackages.java:126)
+	at com.zywee.test.TestPackagesPage.testPackageDetailPage(TestPackagesPage.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:30422","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/24b9d8d0-5ac7-11e6-a586-d963a73e624a/element"}}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPackageDetailPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="tearDown" is-config="true" duration-ms="1276" started-at="2016-08-05T10:13:44Z" finished-at="2016-08-05T10:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:13:45Z" finished-at="2016-08-05T10:13:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestPackagesPage.testSortDropdown()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="setUp" is-config="true" duration-ms="4081" started-at="2016-08-05T10:13:45Z" finished-at="2016-08-05T10:13:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSortDropdown()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="testSortDropdown" duration-ms="19512" started-at="2016-08-05T10:13:49Z" finished-at="2016-08-05T10:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDropdown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestPackagesPage@7c16905e]" name="tearDown" is-config="true" duration-ms="1166" started-at="2016-08-05T10:14:09Z" finished-at="2016-08-05T10:14:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestPackagesPage -->
+      <class name="com.zywee.test.TestHospitalsPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="3" started-at="2016-08-05T10:15:36Z" finished-at="2016-08-05T10:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalsPage.testExpandCollapseLeftNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="4083" started-at="2016-08-05T10:15:36Z" finished-at="2016-08-05T10:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExpandCollapseLeftNav()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="testExpandCollapseLeftNav" duration-ms="19942" started-at="2016-08-05T10:15:40Z" finished-at="2016-08-05T10:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpandCollapseLeftNav -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1199" started-at="2016-08-05T10:16:00Z" finished-at="2016-08-05T10:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="4079" started-at="2016-08-05T10:16:01Z" finished-at="2016-08-05T10:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:16:01Z" finished-at="2016-08-05T10:16:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalsPage.testHospitalsAppointmentPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHospitalsAppointmentPage()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="testHospitalsAppointmentPage" duration-ms="14987" started-at="2016-08-05T10:16:05Z" finished-at="2016-08-05T10:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHospitalsAppointmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1279" started-at="2016-08-05T10:16:20Z" finished-at="2016-08-05T10:16:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:16:21Z" finished-at="2016-08-05T10:16:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalsPage.testHospitalsDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="4068" started-at="2016-08-05T10:16:21Z" finished-at="2016-08-05T10:16:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHospitalsDetailPage()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="testHospitalsDetailPage" duration-ms="34628" started-at="2016-08-05T10:16:25Z" finished-at="2016-08-05T10:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHospitalsDetailPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1232" started-at="2016-08-05T10:17:00Z" finished-at="2016-08-05T10:17:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="4080" started-at="2016-08-05T10:17:01Z" finished-at="2016-08-05T10:17:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:17:01Z" finished-at="2016-08-05T10:17:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalsPage.testLeftNavCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLeftNavCategories()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="testLeftNavCategories" duration-ms="44123" started-at="2016-08-05T10:17:05Z" finished-at="2016-08-05T10:17:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLeftNavCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1167" started-at="2016-08-05T10:17:49Z" finished-at="2016-08-05T10:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:17:51Z" finished-at="2016-08-05T10:17:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestHospitalsPage.testSortDropdown()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="setUp" is-config="true" duration-ms="4069" started-at="2016-08-05T10:17:51Z" finished-at="2016-08-05T10:17:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSortDropdown()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="testSortDropdown" duration-ms="16640" started-at="2016-08-05T10:17:55Z" finished-at="2016-08-05T10:18:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDropdown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestHospitalsPage@2a5ca609]" name="tearDown" is-config="true" duration-ms="1160" started-at="2016-08-05T10:18:11Z" finished-at="2016-08-05T10:18:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestHospitalsPage -->
+      <class name="com.zywee.test.TestZyweeHomePage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:18:12Z" finished-at="2016-08-05T10:18:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testHomePage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="4065" started-at="2016-08-05T10:18:12Z" finished-at="2016-08-05T10:18:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testHomePage()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testHomePage" duration-ms="31095" started-at="2016-08-05T10:18:17Z" finished-at="2016-08-05T10:18:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed: 
+facebook link not found, googleplus link not found, twitter link not found
+facebook link not found, googleplus link not found, twitter link not found, There should be 6 options in the dropdown, Search Hospitals option not found, Search Packages option not found, Search Diagnostics option not found, Search Doctors option not found, Search Tests option not found, Search Clinics option not found
+facebook link not found, googleplus link not found, twitter link not found, There should be 6 options in the dropdown, Search Hospitals option not found, Search Packages option not found, Search Diagnostics option not found, Search Doctors option not found, Search Tests option not found, Search Clinics option not found, Menu not found!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed: 
+facebook link not found, googleplus link not found, twitter link not found
+facebook link not found, googleplus link not found, twitter link not found, There should be 6 options in the dropdown, Search Hospitals option not found, Search Packages option not found, Search Diagnostics option not found, Search Doctors option not found, Search Tests option not found, Search Clinics option not found
+facebook link not found, googleplus link not found, twitter link not found, There should be 6 options in the dropdown, Search Hospitals option not found, Search Packages option not found, Search Diagnostics option not found, Search Doctors option not found, Search Tests option not found, Search Clinics option not found, Menu not found!
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.zywee.base.page.PageBase.doErrorValidation(PageBase.java:222)
+	at com.zywee.test.TestZyweeHomePage.testHomePage(TestZyweeHomePage.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1159" started-at="2016-08-05T10:18:48Z" finished-at="2016-08-05T10:18:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="2" started-at="2016-08-05T10:18:49Z" finished-at="2016-08-05T10:18:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testSearchClinics()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="4084" started-at="2016-08-05T10:18:49Z" finished-at="2016-08-05T10:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSearchClinics()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testSearchClinics" duration-ms="15189" started-at="2016-08-05T10:18:53Z" finished-at="2016-08-05T10:19:08Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Search Clinics
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Search Clinics
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+	at com.zywee.pages.ZyweeHomePage.clickSearchClinics(ZyweeHomePage.java:218)
+	at com.zywee.test.TestZyweeHomePage.testSearchClinics(TestZyweeHomePage.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchClinics -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1266" started-at="2016-08-05T10:19:08Z" finished-at="2016-08-05T10:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:19:09Z" finished-at="2016-08-05T10:19:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testSearchDiagnostics()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="4071" started-at="2016-08-05T10:19:09Z" finished-at="2016-08-05T10:19:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSearchDiagnostics()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testSearchDiagnostics" duration-ms="13930" started-at="2016-08-05T10:19:13Z" finished-at="2016-08-05T10:19:27Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Search Diagnostics
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Search Diagnostics
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+	at com.zywee.pages.ZyweeHomePage.clickSearchDiagnostics(ZyweeHomePage.java:210)
+	at com.zywee.test.TestZyweeHomePage.testSearchDiagnostics(TestZyweeHomePage.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchDiagnostics -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1157" started-at="2016-08-05T10:19:27Z" finished-at="2016-08-05T10:19:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:19:29Z" finished-at="2016-08-05T10:19:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testSearchDoctors()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="3574" started-at="2016-08-05T10:19:29Z" finished-at="2016-08-05T10:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSearchDoctors()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testSearchDoctors" duration-ms="16037" started-at="2016-08-05T10:19:32Z" finished-at="2016-08-05T10:19:48Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Search Doctors
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Search Doctors
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+	at com.zywee.pages.ZyweeHomePage.clickSearchDoctors(ZyweeHomePage.java:234)
+	at com.zywee.test.TestZyweeHomePage.testSearchDoctors(TestZyweeHomePage.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchDoctors -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1159" started-at="2016-08-05T10:19:48Z" finished-at="2016-08-05T10:19:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:19:49Z" finished-at="2016-08-05T10:19:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testSearchHospitals()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="4065" started-at="2016-08-05T10:19:49Z" finished-at="2016-08-05T10:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSearchHospitals()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testSearchHospitals" duration-ms="17060" started-at="2016-08-05T10:19:53Z" finished-at="2016-08-05T10:20:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Search Hospitals
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Search Hospitals
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+	at com.zywee.pages.ZyweeHomePage.clickSearchHospitals(ZyweeHomePage.java:202)
+	at com.zywee.test.TestZyweeHomePage.testSearchHospitals(TestZyweeHomePage.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchHospitals -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1155" started-at="2016-08-05T10:20:10Z" finished-at="2016-08-05T10:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:20:12Z" finished-at="2016-08-05T10:20:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testSearchPackages()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="4066" started-at="2016-08-05T10:20:12Z" finished-at="2016-08-05T10:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSearchPackages()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testSearchPackages" duration-ms="17686" started-at="2016-08-05T10:20:16Z" finished-at="2016-08-05T10:20:33Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Search Packages
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Search Packages
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+	at com.zywee.pages.ZyweeHomePage.clickSearchPackages(ZyweeHomePage.java:226)
+	at com.zywee.test.TestZyweeHomePage.testSearchPackages(TestZyweeHomePage.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchPackages -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1162" started-at="2016-08-05T10:20:33Z" finished-at="2016-08-05T10:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:20:34Z" finished-at="2016-08-05T10:20:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestZyweeHomePage.testSearchTests()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="setUp" is-config="true" duration-ms="4065" started-at="2016-08-05T10:20:34Z" finished-at="2016-08-05T10:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSearchTests()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="testSearchTests" duration-ms="13606" started-at="2016-08-05T10:20:39Z" finished-at="2016-08-05T10:20:52Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Search Tests
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Search Tests
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:149)
+	at com.zywee.pages.ZyweeHomePage.clickSearchTests(ZyweeHomePage.java:242)
+	at com.zywee.test.TestZyweeHomePage.testSearchTests(TestZyweeHomePage.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTests -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestZyweeHomePage@68be2bc2]" name="tearDown" is-config="true" duration-ms="1164" started-at="2016-08-05T10:20:52Z" finished-at="2016-08-05T10:20:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestZyweeHomePage -->
+      <class name="com.zywee.test.TestDoctorsPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:20:53Z" finished-at="2016-08-05T10:20:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDoctorsPage.testDoctorAppointmentPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="4064" started-at="2016-08-05T10:20:53Z" finished-at="2016-08-05T10:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDoctorAppointmentPage()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="testDoctorAppointmentPage" duration-ms="18091" started-at="2016-08-05T10:20:57Z" finished-at="2016-08-05T10:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoctorAppointmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1151" started-at="2016-08-05T10:21:15Z" finished-at="2016-08-05T10:21:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="4078" started-at="2016-08-05T10:21:17Z" finished-at="2016-08-05T10:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:21:17Z" finished-at="2016-08-05T10:21:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDoctorsPage.testDoctorDetailPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testDoctorDetailPage()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="testDoctorDetailPage" duration-ms="18668" started-at="2016-08-05T10:21:21Z" finished-at="2016-08-05T10:21:39Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[{"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:21409","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/410192c0-5ac8-11e6-a57f-3332fb1aa5c0/element"}}
+Command duration or timeout: 3.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 410192c0-5ac8-11e6-a57f-3332fb1aa5c0
+*** Element info: {Using=css selector, value=#Overview > div:nth-child(2) > div:nth-child(1) > div > img}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:21409","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/410192c0-5ac8-11e6-a57f-3332fb1aa5c0/element"}}
+Command duration or timeout: 3.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.phantomjs.PhantomJSDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, handlesAlerts=false, databaseEnabled=false, version=2.1.1, platform=XP, browserConnectionEnabled=false, proxy={proxyType=direct}, nativeEvents=true, acceptSslCerts=false, driverVersion=1.2.0, locationContextEnabled=false, webStorageEnabled=false, browserName=phantomjs, takesScreenshot=true, driverName=ghostdriver, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 410192c0-5ac8-11e6-a57f-3332fb1aa5c0
+*** Element info: {Using=css selector, value=#Overview > div:nth-child(2) > div:nth-child(1) > div > img}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.zywee.base.page.OverviewTab.<init>(OverviewTab.java:17)
+	at com.zywee.base.page.DetailPage$1.<init>(DetailPage.java:11)
+	at com.zywee.base.page.DetailPage.<init>(DetailPage.java:11)
+	at com.zywee.pages.HospitalsDetailPage.<init>(HospitalsDetailPage.java:61)
+	at com.zywee.pages.ListViewDoctors.clickDoctorName(ListViewDoctors.java:128)
+	at com.zywee.test.TestDoctorsPage.testDoctorDetailPage(TestDoctorsPage.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: {"errorMessage":"Unable to find element with css selector '#Overview > div:nth-child(2) > div:nth-child(1) > div > img'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"114","Content-Type":"application/json; charset=utf-8","Host":"localhost:21409","User-Agent":"Apache-HttpClient/4.3.6 (java 1.5)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"#Overview \\u003e div:nth-child(2) \\u003e div:nth-child(1) \\u003e div \\u003e img\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/410192c0-5ac8-11e6-a57f-3332fb1aa5c0/element"}}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'LAPTOP-UHO5ITMS', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoctorDetailPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1202" started-at="2016-08-05T10:21:39Z" finished-at="2016-08-05T10:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-05T10:21:41Z" finished-at="2016-08-05T10:21:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDoctorsPage.testExpandCollapseLeftNav()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="4074" started-at="2016-08-05T10:21:41Z" finished-at="2016-08-05T10:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExpandCollapseLeftNav()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="testExpandCollapseLeftNav" duration-ms="12937" started-at="2016-08-05T10:21:45Z" finished-at="2016-08-05T10:21:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpandCollapseLeftNav -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1232" started-at="2016-08-05T10:21:58Z" finished-at="2016-08-05T10:21:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:21:59Z" finished-at="2016-08-05T10:21:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDoctorsPage.testLeftNavCategories()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="4063" started-at="2016-08-05T10:21:59Z" finished-at="2016-08-05T10:22:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLeftNavCategories()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="testLeftNavCategories" duration-ms="19862" started-at="2016-08-05T10:22:03Z" finished-at="2016-08-05T10:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLeftNavCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1154" started-at="2016-08-05T10:22:23Z" finished-at="2016-08-05T10:22:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-05T10:22:24Z" finished-at="2016-08-05T10:22:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zywee.test.TestDoctorsPage.testSortDropdown()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="setUp" is-config="true" duration-ms="4084" started-at="2016-08-05T10:22:24Z" finished-at="2016-08-05T10:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSortDropdown()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="testSortDropdown" duration-ms="20857" started-at="2016-08-05T10:22:28Z" finished-at="2016-08-05T10:22:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortDropdown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zywee.test.TestDoctorsPage@d2cc05a]" name="tearDown" is-config="true" duration-ms="1151" started-at="2016-08-05T10:22:49Z" finished-at="2016-08-05T10:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zywee.test.TestDoctorsPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
