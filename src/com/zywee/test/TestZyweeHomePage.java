@@ -10,6 +10,7 @@ import com.zywee.base.test.TestBase;
 import com.zywee.pages.ZyweeHomePage;
 
 
+
 public class TestZyweeHomePage extends TestBase {
 
 	private WebDriver driver;
@@ -91,4 +92,34 @@ public class TestZyweeHomePage extends TestBase {
 		tests.validateAll();
 		tests.doErrorValidation();
 	}
+	
+
+//  @Test
+//	public void testSearchTransport(){
+//		zyweeHome.open();
+//		ListViewPage transport = zyweeHome.clickSearchTransport();
+//		transport.validatePage();
+//		transport.validateAll();
+//		transport.doErrorValidation();
+//	}
+//
+//	
+//	@Test
+//	public void testSearchEquipments(){
+//		zyweeHome.open();
+//		ListViewPage equipments = zyweeHome.clickSearchEquipments();
+//		equipments.validatePage();
+//		equipments.validateAll();
+//		equipments.doErrorValidation();
+//	}
+//	
+//	@Test
+//	public void testSearchHomeServices(){
+//		zyweeHome.open();
+//		ListViewPage homeServices = zyweeHome.clickSearchHomeServices();
+//		homeServices.validatePage();
+//		homeServices.validateAll();
+//		homeServices.doErrorValidation();
+//	}
 }
+

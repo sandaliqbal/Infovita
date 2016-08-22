@@ -32,7 +32,10 @@ public class ZyweeHomePage extends PageBase{
 	private final static By searchButtonPack = By.cssSelector("#search_query_pack");
 	private final static By searchButtonDoc = By.cssSelector("#search_query_doc");
 	private final static By searchButtonTest = By.cssSelector("#search_query_test");
-	
+	private final static By searchButtonTransport = By.cssSelector("#search_query_transport");
+	private final static By searchButtonEquipments = By.cssSelector("#search_query_equipment");
+	private final static By searchButtonHomeServices = By.cssSelector("#search_query_homeservice");
+		
 	private final static By headerLogo =By.xpath("//img[@src='/img/images/zywee_logo.png']");
 	private final static By helpline = By.cssSelector("#header > div.container-fluid.top-bar > div > span > span.text1.top_text_margin");
 	private final static By emergency = By.cssSelector("#header > div.container-fluid.top-bar > div > span > span.review_heading");
@@ -65,14 +68,14 @@ public class ZyweeHomePage extends PageBase{
 	private final static By certLink = By.cssSelector("#footer > div.container-fluid.footer > div > div:nth-child(3) > div:nth-child(6) > div > a > img");
 	private final static By footerTM = By.cssSelector("body > div.container-fluid > div > p");
 	
-	private final static By facebookLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(1) > span > img");
-	private final static By gplusLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(2) > span > img");
-	private final static By twitterLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(3) > span > img");
+//	private final static By facebookLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(1) > span > img");
+//	private final static By gplusLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(2) > span > img");
+//	private final static By twitterLink = By.cssSelector("#content > div.container-fluid.blue_back > div > div > div > div.row.social_media.aa > ul > li:nth-child(3) > span > img");
 	
 	private final static By questionFlyout = By.cssSelector("body > div > div > div > div.meshim_widget_components_chatButton_Bubble.bubble > div > div > div.jx_ui_Widget.bubble_title");
 	private final static By chatFlyout = By.cssSelector("body > div > div > div > div.meshim_widget_components_chatButton_Button.ltr > div > div.border_overlay.meshim_widget_widgets_BorderOverlay");
 	
-	private final static By menuItems = By.cssSelector("#header > div:nth-child(5) > div > div > div.container-fluid.dropdown_menu > div");
+	private final static By menuItems = By.cssSelector("#container > div.container-fluid > div > div > div.container-fluid.dropdown_menu > div");
 	private final static By healthcenter = By.cssSelector("#menu_head1 > h2");
 	private final static By menuitemHosp = By.cssSelector("#menu_content1 > div > ul > li:nth-child(1) > span");
 	private final static By menuitemDiag = By.cssSelector("#menu_content1 > div > ul > li:nth-child(2) > span");
@@ -102,9 +105,9 @@ public class ZyweeHomePage extends PageBase{
 		softAssert.assertTrue(isElementPresent(searchSpeciality),"search speciality not found");
 		softAssert.assertTrue(isElementPresent(searchHospital),"search hospital not found");
 		softAssert.assertTrue(isElementPresent(searchButton),"search button not found");
-		softAssert.assertTrue(isElementPresent(facebookLink),"facebook link not found");
-		softAssert.assertTrue(isElementPresent(gplusLink),"googleplus link not found");
-		softAssert.assertTrue(isElementPresent(twitterLink),"twitter link not found");
+//		softAssert.assertTrue(isElementPresent(facebookLink),"facebook link not found");
+//		softAssert.assertTrue(isElementPresent(gplusLink),"googleplus link not found");
+//		softAssert.assertTrue(isElementPresent(twitterLink),"twitter link not found");
 		softAssert.assertTrue(isElementPresent(mostViewedhospitalsLink),"Block for most viewed hospitals not found");
 		softAssert.assertTrue(isElementPresent(healthPackageLink),"Block for health packages not found");
 		softAssert.assertTrue(isElementPresent(mostViewedhospitalsLink),"Block for most viewed hospitals not found");
@@ -199,7 +202,7 @@ public class ZyweeHomePage extends PageBase{
 	
 	public ListViewPage clickSearchHospitals() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
-        dropdown.selectByVisibleText("Search Hospitals");
+        dropdown.selectByVisibleText("Hospitals");
 	    driver.findElement(searchButton).click();
         WaitTool.waitForPageLoad(driver);
         return new ListViewHospitals(driver);
@@ -207,7 +210,7 @@ public class ZyweeHomePage extends PageBase{
 	
 	public ListViewPage clickSearchDiagnostics() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
-        dropdown.selectByVisibleText("Search Diagnostics");
+        dropdown.selectByVisibleText("Diagnostics");
 	    driver.findElement(searchButtonDiag).click();
         WaitTool.waitForPageLoad(driver);
         return new ListViewDiagnostics(driver);
@@ -215,7 +218,7 @@ public class ZyweeHomePage extends PageBase{
 	
 	public ListViewPage clickSearchClinics() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
-        dropdown.selectByVisibleText("Search Clinics");
+        dropdown.selectByVisibleText("Clinics");
 	    driver.findElement(searchButtonClinic).click();
         WaitTool.waitForPageLoad(driver);
         return new ListViewClinics(driver);
@@ -223,7 +226,7 @@ public class ZyweeHomePage extends PageBase{
 	
 	public ListViewPage clickSearchPackages() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
-        dropdown.selectByVisibleText("Search Packages");
+        dropdown.selectByVisibleText("Packages");
 	    driver.findElement(searchButtonPack).click();
         WaitTool.waitForPageLoad(driver);
         return new ListViewPackages(driver);
@@ -231,7 +234,7 @@ public class ZyweeHomePage extends PageBase{
 	
 	public ListViewPage clickSearchDoctors() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
-        dropdown.selectByVisibleText("Search Doctors");
+        dropdown.selectByVisibleText("Doctors");
 	    driver.findElement(searchButtonDoc).click();
         WaitTool.waitForPageLoad(driver);
         return new ListViewDoctors(driver);
@@ -239,11 +242,37 @@ public class ZyweeHomePage extends PageBase{
 	
 	public ListViewPage clickSearchTests() {
 	    Select dropdown = new Select(driver.findElement(searchDropdown));
-        dropdown.selectByVisibleText("Search Tests");
+        dropdown.selectByVisibleText("Tests");
 	    driver.findElement(searchButtonTest).click();
         WaitTool.waitForPageLoad(driver);
         return new ListViewTests(driver);
 	}
+	
+
+//	public ListViewPage clickSearchTransport() {
+//	    Select dropdown = new Select(driver.findElement(searchDropdown));
+//        dropdown.selectByVisibleText("Transport");
+//	    driver.findElement(searchButtonTransport).click();
+//        WaitTool.waitForPageLoad(driver);
+//       return new ListViewTransport(driver);	
+//	}
+//	
+//	
+//	public ListViewPage clickSearchEquipments() {
+//	    Select dropdown = new Select(driver.findElement(searchDropdown));
+//        dropdown.selectByVisibleText("Equipments");
+//	    driver.findElement(searchButtonEquipment).click();
+//        WaitTool.waitForPageLoad(driver);
+//        return new ListViewEquipments(driver); // TODO: Fix
+//	}
+//	
+//	public ListViewPage clickSearchHomeServices() {
+//	    Select dropdown = new Select(driver.findElement(searchDropdown));
+//        dropdown.selectByVisibleText("Home Services");
+//	    driver.findElement(searchButtonHomeServices).click();
+//        WaitTool.waitForPageLoad(driver);
+//        return new ListViewHomeServices(driver); // TODO: Fix
+//	}
 	
 	public void verifyPageLinks() {
 	    List<WebElement> anchorTags = getAnchorLinks();
@@ -319,13 +348,16 @@ public class ZyweeHomePage extends PageBase{
 		for(WebElement element:selectList) {
 			options.add(element.getText().trim());
 		}
-		softAssert.assertEquals(options.size(),6,"There should be 6 options in the dropdown");
-		softAssert.assertTrue(options.contains("Search Hospitals"), "Search Hospitals option not found");
-		softAssert.assertTrue(options.contains("Search Packages"), "Search Packages option not found");
-		softAssert.assertTrue(options.contains("Search Diagnostics"), "Search Diagnostics option not found");
-		softAssert.assertTrue(options.contains("Search Doctors"), "Search Doctors option not found");
-		softAssert.assertTrue(options.contains("Search Tests"), "Search Tests option not found");
-		softAssert.assertTrue(options.contains("Search Clinics"), "Search Clinics option not found");
+		softAssert.assertEquals(options.size(),9,"There should be 9 options in the dropdown");
+		softAssert.assertTrue(options.contains("Hospitals"), "Search Hospitals option not found");
+		softAssert.assertTrue(options.contains("Packages"), "Search Packages option not found");
+		softAssert.assertTrue(options.contains("Diagnostics"), "Search Diagnostics option not found");
+		softAssert.assertTrue(options.contains("Doctors"), "Search Doctors option not found");
+		softAssert.assertTrue(options.contains("Tests"), "Search Tests option not found");
+		softAssert.assertTrue(options.contains("Clinics"), "Search Clinics option not found");
+		softAssert.assertTrue(options.contains("Transport"), "Search Transport option not found");
+		softAssert.assertTrue(options.contains("Equipments"), "Search Equipments option not found");
+		softAssert.assertTrue(options.contains("Home Services"), "Search Home Services option not found");
 		try {
             softAssert.assertAll();
         } catch (AssertionError er) {
