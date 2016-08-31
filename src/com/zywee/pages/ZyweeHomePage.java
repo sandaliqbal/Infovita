@@ -249,23 +249,23 @@ public class ZyweeHomePage extends PageBase{
 	}
 	
 
-//	public ListViewPage clickSearchTransport() {
-//	    Select dropdown = new Select(driver.findElement(searchDropdown));
-//        dropdown.selectByVisibleText("Transport");
-//	    driver.findElement(searchButtonTransport).click();
-//        WaitTool.waitForPageLoad(driver);
-//       return new ListViewTransport(driver);	
-//	}
-//	
-//	
-//	public ListViewPage clickSearchEquipments() {
+	public ListViewPage clickSearchTransport() {
+	    Select dropdown = new Select(driver.findElement(searchDropdown));
+        dropdown.selectByVisibleText("Transport");
+	    driver.findElement(searchButtonTransport).click();
+        WaitTool.waitForPageLoad(driver);
+        return new ListViewTransports(driver);	
+	}
+	
+//
+//	//public ListViewPage clickSearchEquipments() {
 //	    Select dropdown = new Select(driver.findElement(searchDropdown));
 //        dropdown.selectByVisibleText("Equipments");
 //	    driver.findElement(searchButtonEquipment).click();
 //        WaitTool.waitForPageLoad(driver);
 //        return new ListViewEquipments(driver); // TODO: Fix
 //	}
-//	
+	
 //	public ListViewPage clickSearchHomeServices() {
 //	    Select dropdown = new Select(driver.findElement(searchDropdown));
 //        dropdown.selectByVisibleText("Home Services");

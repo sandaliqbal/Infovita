@@ -138,7 +138,7 @@ public class PageBase {
 	  
 
 	  /**
-		* Checks if the elment is in the DOM and displayed. 
+		* Checks if the element is in the DOM and displayed. 
 		* 
 		* @param by - selector to find the element
 		* @return true or false

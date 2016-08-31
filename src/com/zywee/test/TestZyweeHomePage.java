@@ -11,6 +11,7 @@ import com.zywee.pages.ZyweeHomePage;
 
 
 
+@Test
 public class TestZyweeHomePage extends TestBase {
 
 	private WebDriver driver;
@@ -29,7 +30,6 @@ public class TestZyweeHomePage extends TestBase {
 		driver.quit();
 	}
 	
-	@Test
 	public void testHomePage() {
 		zyweeHome.open();
 		zyweeHome.validatePage();
@@ -39,7 +39,6 @@ public class TestZyweeHomePage extends TestBase {
 		//buzzHome.verifyPageLinks();
 	}
 	
-	@Test
 	public void testSearchHospitals(){
 		zyweeHome.open();
 		ListViewPage hospitals = zyweeHome.clickSearchHospitals();
@@ -48,7 +47,6 @@ public class TestZyweeHomePage extends TestBase {
 		hospitals.doErrorValidation();
 	}
 	
-	@Test
 	public void testSearchDiagnostics(){
 		zyweeHome.open();
 		ListViewPage diagnostics = zyweeHome.clickSearchDiagnostics();
@@ -57,7 +55,6 @@ public class TestZyweeHomePage extends TestBase {
 		diagnostics.doErrorValidation();
 	}
 	
-	@Test
 	public void testSearchClinics(){
 		zyweeHome.open();
 		ListViewPage clinics = zyweeHome.clickSearchClinics();
@@ -66,7 +63,6 @@ public class TestZyweeHomePage extends TestBase {
 		clinics.doErrorValidation();
 	}
 	
-	@Test
 	public void testSearchPackages(){
 		zyweeHome.open();
 		ListViewPage packages = zyweeHome.clickSearchPackages();
@@ -75,7 +71,6 @@ public class TestZyweeHomePage extends TestBase {
 		packages.doErrorValidation();
 	}
 	
-	@Test
 	public void testSearchDoctors(){
 		zyweeHome.open();
 		ListViewPage doctors = zyweeHome.clickSearchDoctors();
@@ -84,7 +79,6 @@ public class TestZyweeHomePage extends TestBase {
 		doctors.doErrorValidation();
 	}
 	
-	@Test
 	public void testSearchTests(){
 		zyweeHome.open();
 		ListViewPage tests = zyweeHome.clickSearchTests();
@@ -94,17 +88,14 @@ public class TestZyweeHomePage extends TestBase {
 	}
 	
 
-//  @Test
-//	public void testSearchTransport(){
-//		zyweeHome.open();
-//		ListViewPage transport = zyweeHome.clickSearchTransport();
-//		transport.validatePage();
-//		transport.validateAll();
-//		transport.doErrorValidation();
-//	}
-//
-//	
-//	@Test
+	public void testSearchTransport(){
+		zyweeHome.open();
+		ListViewPage transport = zyweeHome.clickSearchTransport();
+		transport.validatePage();
+		transport.validateAll();
+		transport.doErrorValidation();
+	}
+//TODO//	
 //	public void testSearchEquipments(){
 //		zyweeHome.open();
 //		ListViewPage equipments = zyweeHome.clickSearchEquipments();
@@ -112,7 +103,7 @@ public class TestZyweeHomePage extends TestBase {
 //		equipments.validateAll();
 //		equipments.doErrorValidation();
 //	}
-//	
+	
 //	@Test
 //	public void testSearchHomeServices(){
 //		zyweeHome.open();

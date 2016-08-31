@@ -9,7 +9,7 @@ import com.zywee.base.page.ListViewPage;
 
 public class LeftNavPage extends ListViewPage {
 		
-	private WebElement hideButton = driver.findElement(By.cssSelector("#desktop_filter"));
+	//private WebElement hideButton = driver.findElement(By.cssSelector("#desktop_filter"));
 	private By sideBar = By.cssSelector("#sidebar");
 	private CenterTypePage centerType;
 	private ClinicChargePage clinicCharge;
@@ -18,7 +18,11 @@ public class LeftNavPage extends ListViewPage {
 	private PackageChargePage packCharge;
 	private FacilityPage facilityPage;
 	private SpecialityPage specialityPage;
+	private TransportAccessoriesPage transportAccessories;
+	private TransportDistancePage transportDistance;
+	private TransportChargePage transportCharge;
 	
+
 	public LeftNavPage(WebDriver driver) {
 		super(driver);
 	}
@@ -66,6 +70,27 @@ public class LeftNavPage extends ListViewPage {
 		return this;
 	}
 	
+	public LeftNavPage getTransportLeftNav() {
+		transportCharge = new TransportChargePage(driver);
+		transportDistance = new TransportDistancePage(driver);
+		transportAccessories = new TransportAccessoriesPage(driver);
+		return this;
+	}
+	
+	//TODO
+		//public LeftNavPage getEquipmentsLeftNav() {
+		//	eqquipmentCharge = new EquipmentChargePage(driver);
+		//	return this;
+		//}
+	
+
+	//public LeftNavPage getHomeServicesLeftNav() {
+		//serviceCharge = new HomeServicesChargePage(driver);
+		//durationType = new HomeServicesDurationPage(driver);
+		//return this;
+	//}
+	//
+	
 	public void selectSpeciality(String specialityName) {
 		specialityPage.selectCheckboxes(specialityName);
 		validateSelection(specialityName);
@@ -76,13 +101,24 @@ public class LeftNavPage extends ListViewPage {
 		validateSelection(centerTypeName);
 	}
 	
+	public void selectTransportAccessories(String accessoryName) {
+		transportAccessories.selectCheckboxes(accessoryName);
+		validateSelection(accessoryName);
+	}
+	
+	
 	public void selectFacility(String facilityName) {
 		facilityPage.selectCheckboxes(facilityName);
 		validateSelection(facilityName);
 	}
 	
 	public void collapseLeftNav() {
-		hideButton.click();
+		//hideButton.click();
 		//Assert.assertFalse("Side bar should  be hidden", isElementPresent(sideBar));
+	}
+
+	public void selectTransportDistance(String distanceName) {
+		transportDistance.selectCheckboxes(distanceName);
+		validateSelection(distanceName);
 	}
 }
