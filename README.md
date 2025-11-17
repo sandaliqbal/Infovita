@@ -17,11 +17,11 @@ Here’s a high-level view of the directory structure for this repo (based on th
 Infovita/
 ├── phantomjs/ # PhantomJS driver / assets
 ├── src/ # Source code (probably Java) for test suites
-    main/com/zywee
-      base
-      pages
-      tools
-  test
+   ├──main/com/zywee
+      ├──base
+      ├──pages
+      ├──tools
+   ├──test
 ├── build.xml # Apache Ant build file (or similar)
 └── README.md # This file
 ```
